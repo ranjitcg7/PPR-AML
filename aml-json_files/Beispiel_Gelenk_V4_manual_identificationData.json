@@ -1,0 +1,1833 @@
+{
+    "AdditionalInformation": [
+        {}
+    ],
+    "SuperiorStandardVersion": [
+        "AutomationML 2.10"
+    ],
+    "SourceDocumentInformation": [
+        {
+            "OriginName": "AutomationML Editor",
+            "OriginID": "916578CA-FE0D-474E-A4FC-9E1719892369",
+            "OriginVendor": "AutomationML e.V.",
+            "OriginVendorURL": "www.AutomationML.org",
+            "OriginVersion": "5.6.10.0",
+            "OriginRelease": "5.6.10.0",
+            "LastWritingDateTime": "2023-08-28T14:50:51.981343300+02:00",
+            "OriginProjectTitle": "unspecified",
+            "OriginProjectID": "unspecified"
+        }
+    ],
+    "InstanceHierarchy": [
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "InstanceHierarchy",
+            "InternalElement": [
+                {
+                    "ID": "43d375f3-7486-4f9c-ae26-746e4bc2332c",
+                    "Name": "plant",
+                    "InternalElement": [
+                        {
+                            "ID": "a802444e-d488-4504-8764-dee5c01fd232",
+                            "Name": "Plate",
+                            "InternalElement": [
+                                {
+                                    "ID": "4b09706f-f43e-49d0-8c7c-cd59821acf30",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "101",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "fbc64790-49fd-468c-83db-ca6ca936ee8c",
+                                            "Name": "PP_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/InputMaterialRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/InputMaterialRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/InputMaterialRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "12e169dc-acde-4a36-a549-16b4b27b5497",
+                            "Name": "NutWelding",
+                            "InternalElement": [
+                                {
+                                    "ID": "afaee84f-39eb-4d88-bcd4-436820d239d3",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "301",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "7e59a263-df84-4883-ae55-7aefc6832fec",
+                                            "Name": "PP_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                        },
+                                        {
+                                            "ID": "eb38b9b7-21db-46b1-83e2-be3e523d9897",
+                                            "Name": "PR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProcessRoleClass/WeldingRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/WeldingRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProcessRoleClass/WeldingRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "2cd86314-b467-4163-b476-6398c615c4b0",
+                            "Name": "WeldingUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "30633f3e-a9b8-47ab-8dbc-43b2cd75dbc5",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "201",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "4c81b630-3286-44c1-99e2-ee922acdf16c",
+                                            "Name": "PR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/WeldingUnitRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/WeldingUnitRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/WeldingUnitRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "514185cf-a934-4075-b259-f2fbc85487b1",
+                            "Name": "WeldedPlate",
+                            "InternalElement": [
+                                {
+                                    "ID": "97329bf6-85d7-4edd-ad02-8055e87f2a37",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "102",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "5d09a509-4b4a-424c-99b0-ec6979270c2c",
+                                            "Name": "PP_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/IntermediateMaterialRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "7cd4965c-c351-4dbc-b854-d481ccb2a8ae",
+                            "Name": "BoltScrewing",
+                            "InternalElement": [
+                                {
+                                    "ID": "8889d6bd-116d-43cf-9288-3eda6846d4fd",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "302",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "5b0c1e9e-9cf8-49f0-a1ef-efd3edda34e3",
+                                            "Name": "PP_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                        },
+                                        {
+                                            "ID": "8926b4ce-3da6-485f-91cc-6d2e0ae773f4",
+                                            "Name": "PR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProcessRoleClass/ScrewingRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/ScrewingRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProcessRoleClass/ScrewingRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "b8f66c72-0961-4a8a-8332-3a97abcdd337",
+                            "Name": "Cell",
+                            "InternalElement": [
+                                {
+                                    "ID": "85a50865-3775-413d-90ef-1b99f3c5d8f8",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "202",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "951460f4-d914-4358-85ca-e8161c64a00c",
+                                            "Name": "PR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                        },
+                                        {
+                                            "ID": "c3a5edaa-64c5-484c-8089-167cd25b2046",
+                                            "Name": "RR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/CellRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/CellRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/CellRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "0791d26b-ca02-4faa-a9df-f469cd24465d",
+                            "Name": "ScrewingUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "bb322077-45a0-41bd-b79d-9e46207bc693",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "203",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "f3bad09e-edaa-458e-8fb9-74010b7d4668",
+                                            "Name": "PR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                        },
+                                        {
+                                            "ID": "c4d99138-5d71-4787-945f-f910b988cfb2",
+                                            "Name": "RR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/ScrewingUnitRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/ScrewingUnitRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/ScrewingUnitRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "77a014a6-7b3e-4a19-8098-251afb1e192f",
+                            "Name": "FixingUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "af8cb852-4e00-430b-9551-99bcf94433bf",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "Value": "204",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "9e5cd7dc-527e-4ee9-857b-23008cc1ae44",
+                                            "Name": "PR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                        },
+                                        {
+                                            "ID": "675dfe73-d52e-4ada-bee3-1a1fc0fe16c2",
+                                            "Name": "RR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/FixingUnitRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/FixingUnitRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/FixingUnitRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "388a00e1-e991-4978-8fc8-c92a0b3b2e7e",
+                            "Name": "QualityControlUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "c1661f82-999c-442b-83c9-94313841b1f5",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "205",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "c763f645-62f5-49d9-aeee-f053f998fd79",
+                                            "Name": "PR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                        },
+                                        {
+                                            "ID": "24ee593f-4eb6-46b1-8021-fd32eb194846",
+                                            "Name": "RR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/QualityControlRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/QualityControlRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/QualityControlRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "07271a98-d2ff-41ed-9f84-63e77d969d6e",
+                            "Name": "PlateWithBolt",
+                            "InternalElement": [
+                                {
+                                    "ID": "405b2f77-43af-4028-992d-a2cfcd04f064",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "103",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "661a9b02-0f50-404d-b514-4df1a0fcdca4",
+                                            "Name": "PP_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/IntermediateMaterialRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "a3d2d3e7-5b7c-4028-b5ab-3ce6e8a38ecf",
+                            "Name": "RRiveting",
+                            "InternalElement": [
+                                {
+                                    "ID": "4044cc34-bdd1-4621-a4a7-febc7e9af641",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "303",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "f4c32a30-b277-4505-9584-caf1fcc3d80d",
+                                            "Name": "PP_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                        },
+                                        {
+                                            "ID": "4b312338-f48d-4a9f-8137-2ab111638d8c",
+                                            "Name": "PR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProcessRoleClass/RivetingRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/RivetingRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProcessRoleClass/RivetingRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "2d4b2294-adb3-403f-ba98-259a06dae5d7",
+                            "Name": "RivetingUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "2048f561-819b-4960-8784-0471da92cca6",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "206",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "8404fa30-386d-4fed-b8b6-46420f203202",
+                                            "Name": "PR_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/RivetingUnitRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/RivetingUnitRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/RivetingUnitRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "1e8cd6c6-6a22-4110-a077-904028a9cef7",
+                            "Name": "FinalProduct",
+                            "InternalElement": [
+                                {
+                                    "ID": "26002c83-36e6-4f88-abc5-017ebd971aa5",
+                                    "Name": "Identification",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "104",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "ManufacturerName",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                        }
+                                    ],
+                                    "ExternalInterface": [
+                                        {
+                                            "ID": "d04a8cac-118d-4471-8dda-095ebf50e216",
+                                            "Name": "PP_RelationInterfaceClass",
+                                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/FinalProductRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "IdentificationSystemUnitClassLib/FinalProductRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/FinalProductRoleClass"
+                                }
+                            ]
+                        }
+                    ],
+                    "InternalLink": [
+                        {
+                            "Name": "Link",
+                            "RefPartnerSideA": "fbc64790-49fd-468c-83db-ca6ca936ee8c",
+                            "RefPartnerSideB": "7e59a263-df84-4883-ae55-7aefc6832fec"
+                        },
+                        {
+                            "Name": "InternalLink",
+                            "RefPartnerSideA": "4c81b630-3286-44c1-99e2-ee922acdf16c",
+                            "RefPartnerSideB": "eb38b9b7-21db-46b1-83e2-be3e523d9897"
+                        },
+                        {
+                            "Name": "InternalLink1",
+                            "RefPartnerSideA": "7e59a263-df84-4883-ae55-7aefc6832fec",
+                            "RefPartnerSideB": "5d09a509-4b4a-424c-99b0-ec6979270c2c"
+                        },
+                        {
+                            "Name": "InternalLink2",
+                            "RefPartnerSideA": "5b0c1e9e-9cf8-49f0-a1ef-efd3edda34e3",
+                            "RefPartnerSideB": "5d09a509-4b4a-424c-99b0-ec6979270c2c"
+                        },
+                        {
+                            "Name": "InternalLink3",
+                            "RefPartnerSideA": "951460f4-d914-4358-85ca-e8161c64a00c",
+                            "RefPartnerSideB": "8926b4ce-3da6-485f-91cc-6d2e0ae773f4"
+                        },
+                        {
+                            "Name": "InternalLink4",
+                            "RefPartnerSideA": "c4d99138-5d71-4787-945f-f910b988cfb2",
+                            "RefPartnerSideB": "c3a5edaa-64c5-484c-8089-167cd25b2046"
+                        },
+                        {
+                            "Name": "InternalLink5",
+                            "RefPartnerSideA": "675dfe73-d52e-4ada-bee3-1a1fc0fe16c2",
+                            "RefPartnerSideB": "c3a5edaa-64c5-484c-8089-167cd25b2046"
+                        },
+                        {
+                            "Name": "InternalLink6",
+                            "RefPartnerSideA": "24ee593f-4eb6-46b1-8021-fd32eb194846",
+                            "RefPartnerSideB": "c3a5edaa-64c5-484c-8089-167cd25b2046"
+                        },
+                        {
+                            "Name": "InternalLink7",
+                            "RefPartnerSideA": "661a9b02-0f50-404d-b514-4df1a0fcdca4",
+                            "RefPartnerSideB": "5b0c1e9e-9cf8-49f0-a1ef-efd3edda34e3"
+                        },
+                        {
+                            "Name": "InternalLink8",
+                            "RefPartnerSideA": "f4c32a30-b277-4505-9584-caf1fcc3d80d",
+                            "RefPartnerSideB": "661a9b02-0f50-404d-b514-4df1a0fcdca4"
+                        },
+                        {
+                            "Name": "InternalLink9",
+                            "RefPartnerSideA": "8404fa30-386d-4fed-b8b6-46420f203202",
+                            "RefPartnerSideB": "4b312338-f48d-4a9f-8137-2ab111638d8c"
+                        },
+                        {
+                            "Name": "InternalLink10",
+                            "RefPartnerSideA": "d04a8cac-118d-4471-8dda-095ebf50e216",
+                            "RefPartnerSideB": "f4c32a30-b277-4505-9584-caf1fcc3d80d"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "InterfaceClassLib": [
+        {
+            "Description": {
+                "value": "Standard Automation Markup Language Interface Class Library"
+            },
+            "Version": {
+                "value": "2.10.0"
+            },
+            "Name": "AutomationMLInterfaceClassLib",
+            "InterfaceClass": [
+                {
+                    "Name": "AutomationMLBaseInterface",
+                    "InterfaceClass": [
+                        {
+                            "Name": "Order",
+                            "Attribute": [
+                                {
+                                    "Name": "Direction",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Direction"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseInterface"
+                        },
+                        {
+                            "Name": "Port",
+                            "Attribute": [
+                                {
+                                    "Name": "Direction",
+                                    "Constraint": [
+                                        {
+                                            "NominalScaledType": {
+                                                "RequiredValue": [
+                                                    "In",
+                                                    "Out",
+                                                    "InOut"
+                                                ]
+                                            },
+                                            "Name": "AllowedValues"
+                                        }
+                                    ],
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Direction"
+                                },
+                                {
+                                    "Name": "Cardinality",
+                                    "Attribute": [
+                                        {
+                                            "Name": "MinOccur",
+                                            "AttributeDataType": "xs:unsignedInt"
+                                        },
+                                        {
+                                            "Name": "MaxOccur",
+                                            "AttributeDataType": "xs:unsignedInt"
+                                        }
+                                    ],
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Cardinality"
+                                },
+                                {
+                                    "Name": "Category",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Category"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseInterface"
+                        },
+                        {
+                            "Name": "PPRConnector",
+                            "RefBaseClassPath": "AutomationMLBaseInterface"
+                        },
+                        {
+                            "Name": "ExternalDataConnector",
+                            "Attribute": [
+                                {
+                                    "Name": "refURI",
+                                    "AttributeDataType": "xs:anyURI",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/refURI"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseInterface",
+                            "InterfaceClass": [
+                                {
+                                    "Name": "COLLADAInterface",
+                                    "RefBaseClassPath": "ExternalDataConnector"
+                                },
+                                {
+                                    "Name": "PLCopenXMLInterface",
+                                    "RefBaseClassPath": "ExternalDataConnector"
+                                },
+                                {
+                                    "Name": "ExternalDataReference",
+                                    "Attribute": [
+                                        {
+                                            "Name": "MIMEType",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "AutomationMLBaseAttributeTypeLib/MIMEType"
+                                        }
+                                    ],
+                                    "RefBaseClassPath": "ExternalDataConnector"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Communication",
+                            "RefBaseClassPath": "AutomationMLBaseInterface",
+                            "InterfaceClass": [
+                                {
+                                    "Name": "SignalInterface",
+                                    "RefBaseClassPath": "Communication"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "IdentificationInterfaceClassLib",
+            "InterfaceClass": [
+                {
+                    "Name": "PP_RelationInterfaceClass"
+                },
+                {
+                    "Name": "PR_RelationInterfaceClass"
+                },
+                {
+                    "Name": "RR_RelationInterfaceClass"
+                }
+            ]
+        }
+    ],
+    "RoleClassLib": [
+        {
+            "Description": {
+                "value": "Automation Markup Language base role class library"
+            },
+            "Version": {
+                "value": "2.10.0"
+            },
+            "Name": "AutomationMLBaseRoleClassLib",
+            "RoleClass": [
+                {
+                    "Name": "AutomationMLBaseRole",
+                    "RoleClass": [
+                        {
+                            "Name": "Group",
+                            "Attribute": [
+                                {
+                                    "Name": "AssociatedFacet",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/AssociatedFacet"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Facet",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Resource",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Product",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Process",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Structure",
+                            "RefBaseClassPath": "AutomationMLBaseRole",
+                            "RoleClass": [
+                                {
+                                    "Name": "ProductStructure",
+                                    "RefBaseClassPath": "Structure"
+                                },
+                                {
+                                    "Name": "ProcessStructure",
+                                    "RefBaseClassPath": "Structure"
+                                },
+                                {
+                                    "Name": "ResourceStructure",
+                                    "RefBaseClassPath": "Structure"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "ExternalData",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "IdentificationRoleClassLib",
+            "RoleClass": [
+                {
+                    "Name": "ProductRoleClass",
+                    "RoleClass": [
+                        {
+                            "Name": "InputMaterialRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "ManufacturerName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "6f44b829-f840-4f79-a642-f8dbf46ca2eb",
+                                    "Name": "PP_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ProductRoleClass"
+                        },
+                        {
+                            "Name": "IntermediateMaterialRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "ManufacturerName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "87569176-c7e2-4479-8cdf-ea80d193bd34",
+                                    "Name": "PP_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ProductRoleClass"
+                        },
+                        {
+                            "Name": "FinalProductRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "ManufacturerName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "4fcb2aa9-d57a-4415-a7db-c3497c6104b3",
+                                    "Name": "PP_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ProductRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "Name": "ProcessRoleClass",
+                    "RoleClass": [
+                        {
+                            "Name": "WeldingRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "f8832e6c-9cd5-46a3-abef-f0b0ef45b500",
+                                    "Name": "PP_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                },
+                                {
+                                    "ID": "bd88f66a-dbff-4476-a556-a7641c8598ae",
+                                    "Name": "PR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ProcessRoleClass"
+                        },
+                        {
+                            "Name": "ScrewingRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "431744ae-2a64-4aa3-a392-c38b020296fd",
+                                    "Name": "PP_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                },
+                                {
+                                    "ID": "34954d37-0809-42b1-b787-aece4b1f6e51",
+                                    "Name": "PR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ProcessRoleClass"
+                        },
+                        {
+                            "Name": "RivetingRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "aef70fdc-83bf-4fe0-94f9-84f8d796cd67",
+                                    "Name": "PP_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                                },
+                                {
+                                    "ID": "7dc389e4-523c-4af7-a280-80ec31845caf",
+                                    "Name": "PR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ProcessRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "Name": "ResourceRoleClass",
+                    "RoleClass": [
+                        {
+                            "Name": "WeldingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "ManufacturerName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "31b6fc21-767a-4ee2-a371-3a828a28798a",
+                                    "Name": "PR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ResourceRoleClass"
+                        },
+                        {
+                            "Name": "ScrewingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "ManufacturerName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "e44da437-b3ea-430d-9c58-9d5114f77b85",
+                                    "Name": "PR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                },
+                                {
+                                    "ID": "b68f6d93-4f4a-429d-b894-02987842ba7f",
+                                    "Name": "RR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ResourceRoleClass"
+                        },
+                        {
+                            "Name": "RivetingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "ManufacturerName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "5d1e8896-6f21-4f32-80b0-3a40275bb232",
+                                    "Name": "PR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ResourceRoleClass"
+                        },
+                        {
+                            "Name": "FixingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "ManufacturerName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "098806ea-769b-40de-83ca-29520e55381d",
+                                    "Name": "PR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                },
+                                {
+                                    "ID": "4977ead6-13ab-4ffb-ab75-3b52716c9cbb",
+                                    "Name": "RR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ResourceRoleClass"
+                        },
+                        {
+                            "Name": "QualityControlRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "ManufacturerName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "083479ac-ef5d-4613-b7ad-f09268201949",
+                                    "Name": "PR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                },
+                                {
+                                    "ID": "34e89df7-19d1-41d1-90fa-44e89ae69b9b",
+                                    "Name": "RR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ResourceRoleClass"
+                        },
+                        {
+                            "Name": "CellRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "ManufacturerName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                                }
+                            ],
+                            "ExternalInterface": [
+                                {
+                                    "ID": "0d8b9508-6da6-4c72-a2b3-c8851a7607b1",
+                                    "Name": "PR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                                },
+                                {
+                                    "ID": "02792b4a-e028-49f1-8784-95db1284fc61",
+                                    "Name": "RR_RelationInterfaceClass",
+                                    "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                                }
+                            ],
+                            "RefBaseClassPath": "ResourceRoleClass"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "SystemUnitClassLib": [
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "IdentificationSystemUnitClassLib",
+            "SystemUnitClass": [
+                {
+                    "ID": "22b2ff1d-dd6c-4204-b1c2-8d23ab5b93b5",
+                    "Name": "InputMaterialRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "ManufacturerName",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "6fac09b4-fd53-46b1-bcf8-66aaa6a944e6",
+                            "Name": "PP_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/InputMaterialRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "90127147-77cb-4b05-9ec4-d1fd902d1537",
+                    "Name": "IntermediateMaterialRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "ManufacturerName",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "94bcde7d-a2d0-4d49-8401-8fb2db1f48af",
+                            "Name": "PP_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "8dc66005-2068-45a6-a963-2b0a0edd669c",
+                    "Name": "FinalProductRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "ManufacturerName",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "d0804b01-a300-47e0-a2f5-0b2e97e85169",
+                            "Name": "PP_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ProductRoleClass/FinalProductRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "83a0f01d-a177-4044-8825-495544a4193f",
+                    "Name": "WeldingRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "e1ae181c-9c49-400a-8e3b-7cea6744648b",
+                            "Name": "PP_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                        },
+                        {
+                            "ID": "e6b00259-6986-4e6b-aca6-3fc605b3ad94",
+                            "Name": "PR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ProcessRoleClass/WeldingRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "5ea8dc55-06ac-4b76-8303-e45d86fb36a3",
+                    "Name": "ScrewingRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "b2a81427-c0df-4819-bfb9-e5cdaa06b60b",
+                            "Name": "PP_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                        },
+                        {
+                            "ID": "2ad33d5c-8a60-4bc1-811b-344578a566af",
+                            "Name": "PR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ProcessRoleClass/ScrewingRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "60d196a1-a0ee-4279-9461-aef5a05e1902",
+                    "Name": "RivetingRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "09895eb1-0f1b-4e4a-8ad1-dc7d066ffd1c",
+                            "Name": "PP_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PP_RelationInterfaceClass"
+                        },
+                        {
+                            "ID": "0f895382-c909-4727-915d-9ab3db62929e",
+                            "Name": "PR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ProcessRoleClass/RivetingRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "3bd51c39-ba32-402f-8e2e-e3b5fc5e51e9",
+                    "Name": "WeldingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "ManufacturerName",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "b1685049-324e-499a-a34d-1d85aeb12310",
+                            "Name": "PR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/WeldingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "6a949648-4ca1-4b23-966d-ac5970dc67eb",
+                    "Name": "ScrewingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "ManufacturerName",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "c6dee15d-6928-47f2-a58f-f979ce0d68ae",
+                            "Name": "PR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                        },
+                        {
+                            "ID": "dee5c7f9-3476-4407-bbc0-04c74cb24a11",
+                            "Name": "RR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/ScrewingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "6ed4aa56-2108-41db-a96b-e36d4eb0b53a",
+                    "Name": "RivetingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "ManufacturerName",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "b86fcc4c-f42c-4829-84c8-57e98289d7ef",
+                            "Name": "PR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/RivetingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "e694528c-e65d-41b4-9641-135d2c61ba8f",
+                    "Name": "FixingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "ManufacturerName",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "3dd079a6-af05-4ae6-863e-4a743d90cfdb",
+                            "Name": "PR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                        },
+                        {
+                            "ID": "e4778d37-b29e-4110-95e7-715afbb1574f",
+                            "Name": "RR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/FixingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "784ddd1e-dcd4-438e-9f26-56841e937aa5",
+                    "Name": "QualityControlRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "ManufacturerName",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "4e8e4c6b-619a-4fa5-965a-594acbbf4502",
+                            "Name": "PR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                        },
+                        {
+                            "ID": "371f1680-1f9b-436f-be9c-47ab468617a0",
+                            "Name": "RR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/QualityControlRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "ed377c72-4f0e-4349-83b1-6dc6aa7aa641",
+                    "Name": "CellRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/Name"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "ManufacturerName",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "IdentificationAttributeTypeLib/ManufacturerName"
+                        }
+                    ],
+                    "ExternalInterface": [
+                        {
+                            "ID": "c56f43ca-0a07-4a8c-8705-62cd060cd1c7",
+                            "Name": "PR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/PR_RelationInterfaceClass"
+                        },
+                        {
+                            "ID": "54020808-4b4c-4ebd-b05a-d4f127c8e275",
+                            "Name": "RR_RelationInterfaceClass",
+                            "RefBaseClassPath": "IdentificationInterfaceClassLib/RR_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "IdentificationRoleClassLib/ResourceRoleClass/CellRoleClass"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "AttributeTypeLib": [
+        {
+            "Description": {
+                "value": "Standard Automation Markup Language Attribute Type Library"
+            },
+            "Version": {
+                "value": "2.10.0"
+            },
+            "Name": "AutomationMLBaseAttributeTypeLib",
+            "AttributeType": [
+                {
+                    "Name": "Direction",
+                    "Constraint": [
+                        {
+                            "NominalScaledType": {
+                                "RequiredValue": [
+                                    "In",
+                                    "Out",
+                                    "InOut"
+                                ]
+                            },
+                            "Name": "AllowedValues"
+                        }
+                    ],
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Cardinality",
+                    "Attribute": [
+                        {
+                            "Name": "MinOccur",
+                            "AttributeDataType": "xs:unsignedInt"
+                        },
+                        {
+                            "Name": "MaxOccur",
+                            "AttributeDataType": "xs:unsignedInt"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Category",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "refURI",
+                    "AttributeDataType": "xs:anyURI"
+                },
+                {
+                    "Name": "AssociatedFacet",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "ListType"
+                },
+                {
+                    "Name": "OrderedListType"
+                },
+                {
+                    "Name": "LocalizedAttribute",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "AssociatedExternalValue",
+                    "Attribute": [
+                        {
+                            "Name": "refCAEXAttribute"
+                        },
+                        {
+                            "Name": "refURI",
+                            "RefAttributeType": "AutomationMLBaseAttributeTypeLib/refURI"
+                        },
+                        {
+                            "Name": "Direction",
+                            "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Direction"
+                        }
+                    ]
+                },
+                {
+                    "Name": "MIMEType",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "DocLang",
+                    "AttributeDataType": "xs:string"
+                }
+            ]
+        },
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "IdentificationAttributeTypeLib",
+            "AttributeType": [
+                {
+                    "Name": "Name",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "ID",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "ManufacturerName",
+                    "AttributeDataType": "xs:string"
+                }
+            ]
+        }
+    ],
+    "SchemaVersion": "3.0",
+    "FileName": "Beispiel_Gelenk_V4_manual_identificationData.aml"
+}

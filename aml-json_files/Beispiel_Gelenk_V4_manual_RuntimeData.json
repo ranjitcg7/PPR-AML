@@ -1,0 +1,1904 @@
+{
+    "AdditionalInformation": [
+        {}
+    ],
+    "SuperiorStandardVersion": [
+        "AutomationML 2.10"
+    ],
+    "SourceDocumentInformation": [
+        {
+            "OriginName": "AutomationML Editor",
+            "OriginID": "916578CA-FE0D-474E-A4FC-9E1719892369",
+            "OriginVendor": "AutomationML e.V.",
+            "OriginVendorURL": "www.AutomationML.org",
+            "OriginVersion": "5.6.10.0",
+            "OriginRelease": "5.6.10.0",
+            "LastWritingDateTime": "2023-08-28T14:56:16.617257800+02:00",
+            "OriginProjectTitle": "unspecified",
+            "OriginProjectID": "unspecified"
+        }
+    ],
+    "InstanceHierarchy": [
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "InstanceHierarchy",
+            "InternalElement": [
+                {
+                    "ID": "43d375f3-7486-4f9c-ae26-746e4bc2332c",
+                    "Name": "plant",
+                    "InternalElement": [
+                        {
+                            "ID": "a802444e-d488-4504-8764-dee5c01fd232",
+                            "Name": "Plate",
+                            "InternalElement": [
+                                {
+                                    "ID": "30f612f1-cbed-4d72-a827-fa5341f20028",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "id",
+                                            "Value": "101",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Quantity",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                                        },
+                                        {
+                                            "Name": "Deviation",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                        },
+                                        {
+                                            "Name": "EnergyFootPrint",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyFootPrint"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/InputMaterialRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/InputMaterialRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/InputMaterialRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "12e169dc-acde-4a36-a549-16b4b27b5497",
+                            "Name": "NutWelding",
+                            "InternalElement": [
+                                {
+                                    "ID": "4d024def-18e2-4918-b956-2fdad46b8d5f",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "id",
+                                            "Value": "301",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Current",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                        },
+                                        {
+                                            "Name": "Duration",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                        },
+                                        {
+                                            "Name": "Deviation",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/WeldingRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/WeldingRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/WeldingRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "2cd86314-b467-4163-b476-6398c615c4b0",
+                            "Name": "WeldingUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "b71c635c-caa3-47c0-9165-9ceaa2a76101",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "201",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Current",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                        },
+                                        {
+                                            "Name": "Duration",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                        },
+                                        {
+                                            "Name": "Temperature",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Temperature"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/WeldingUnitRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/WeldingUnitRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/WeldingUnitRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "514185cf-a934-4075-b259-f2fbc85487b1",
+                            "Name": "WeldedPlate",
+                            "InternalElement": [
+                                {
+                                    "ID": "43b083cd-708d-4c67-8b3a-41d92da07cb1",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "102",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Quantity",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                                        },
+                                        {
+                                            "Name": "Deviation",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/IntermediateMaterialRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "7cd4965c-c351-4dbc-b854-d481ccb2a8ae",
+                            "Name": "BoltScrewing",
+                            "InternalElement": [
+                                {
+                                    "ID": "b24c5c57-9998-42cb-aeee-75c88ac2f0ff",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "302",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Current",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                        },
+                                        {
+                                            "Name": "Duration",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                        },
+                                        {
+                                            "Name": "Deviation",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                        },
+                                        {
+                                            "Name": "Torque",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Torque"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/ScrewingRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/ScrewingRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/ScrewingRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "b8f66c72-0961-4a8a-8332-3a97abcdd337",
+                            "Name": "Cell",
+                            "InternalElement": [
+                                {
+                                    "ID": "906c7efd-8d42-48e0-a0db-f16c6e433904",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "202",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/CellRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/CellRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/CellRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "0791d26b-ca02-4faa-a9df-f469cd24465d",
+                            "Name": "ScrewingUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "caef8758-85ad-4f44-8a5b-26c11e4c82c9",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "203",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Duration",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                        },
+                                        {
+                                            "Name": "Torque",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Torque"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/ScrewingUnitRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/ScrewingUnitRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/ScrewingUnitRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "77a014a6-7b3e-4a19-8098-251afb1e192f",
+                            "Name": "FixingUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "46ef5c81-4f45-4a19-921f-edd9d98dbe59",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "204",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        },
+                                        {
+                                            "Name": "ClampingForce",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ClampingForce"
+                                        },
+                                        {
+                                            "Name": "Current",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/FixingUnitRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/FixingUnitRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/FixingUnitRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "388a00e1-e991-4978-8fc8-c92a0b3b2e7e",
+                            "Name": "QualityControlUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "0583c22d-ab53-40d5-af12-2da352ce31d5",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "205",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Duration",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                        },
+                                        {
+                                            "Name": "Deviation",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/QualityControlUnitRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/QualityControlUnitRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/QualityControlUnitRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "07271a98-d2ff-41ed-9f84-63e77d969d6e",
+                            "Name": "PlateWithBolt",
+                            "InternalElement": [
+                                {
+                                    "ID": "d6e6dec6-275e-4609-873a-046fd744c0e0",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "103",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Quantity",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                                        },
+                                        {
+                                            "Name": "Deviation",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/IntermediateMaterialRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "a3d2d3e7-5b7c-4028-b5ab-3ce6e8a38ecf",
+                            "Name": "RRiveting",
+                            "InternalElement": [
+                                {
+                                    "ID": "b2d3638e-76c0-44b7-a098-00ea7efd2057",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "303",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Current",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                        },
+                                        {
+                                            "Name": "Duration",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                        },
+                                        {
+                                            "Name": "Deviation",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                        },
+                                        {
+                                            "Name": "Pressure",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Pressure"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/RivetingRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/RivetingRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/RivetingRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "2d4b2294-adb3-403f-ba98-259a06dae5d7",
+                            "Name": "RivetingUnit",
+                            "InternalElement": [
+                                {
+                                    "ID": "67421cd8-a4cf-4914-8a56-e6f5592c3e0d",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "206",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Duration",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                        },
+                                        {
+                                            "Name": "Pressure",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Pressure"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/RivetingUnitRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/RivetingUnitRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/RivetingUnitRoleClass"
+                                }
+                            ]
+                        },
+                        {
+                            "ID": "1e8cd6c6-6a22-4110-a077-904028a9cef7",
+                            "Name": "FinalProduct",
+                            "InternalElement": [
+                                {
+                                    "ID": "48b70098-3392-4604-af5d-8f4b1212d323",
+                                    "Name": "RuntimeData",
+                                    "Attribute": [
+                                        {
+                                            "Name": "Name",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                        },
+                                        {
+                                            "Name": "ID",
+                                            "Value": "104",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                        },
+                                        {
+                                            "Name": "Quantity",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                                        },
+                                        {
+                                            "Name": "Deviation",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                        },
+                                        {
+                                            "Name": "EnergyConsumption",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                        }
+                                    ],
+                                    "RoleRequirements": [
+                                        {
+                                            "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/FinalProductRoleClass"
+                                        }
+                                    ],
+                                    "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/FinalProductRoleClass"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/FinalProductRoleClass"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "InterfaceClassLib": [
+        {
+            "Description": {
+                "value": "Standard Automation Markup Language Interface Class Library"
+            },
+            "Version": {
+                "value": "2.10.0"
+            },
+            "Name": "AutomationMLInterfaceClassLib",
+            "InterfaceClass": [
+                {
+                    "Name": "AutomationMLBaseInterface",
+                    "InterfaceClass": [
+                        {
+                            "Name": "Order",
+                            "Attribute": [
+                                {
+                                    "Name": "Direction",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Direction"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseInterface"
+                        },
+                        {
+                            "Name": "Port",
+                            "Attribute": [
+                                {
+                                    "Name": "Direction",
+                                    "Constraint": [
+                                        {
+                                            "NominalScaledType": {
+                                                "RequiredValue": [
+                                                    "In",
+                                                    "Out",
+                                                    "InOut"
+                                                ]
+                                            },
+                                            "Name": "AllowedValues"
+                                        }
+                                    ],
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Direction"
+                                },
+                                {
+                                    "Name": "Cardinality",
+                                    "Attribute": [
+                                        {
+                                            "Name": "MinOccur",
+                                            "AttributeDataType": "xs:unsignedInt"
+                                        },
+                                        {
+                                            "Name": "MaxOccur",
+                                            "AttributeDataType": "xs:unsignedInt"
+                                        }
+                                    ],
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Cardinality"
+                                },
+                                {
+                                    "Name": "Category",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Category"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseInterface"
+                        },
+                        {
+                            "Name": "PPRConnector",
+                            "RefBaseClassPath": "AutomationMLBaseInterface"
+                        },
+                        {
+                            "Name": "ExternalDataConnector",
+                            "Attribute": [
+                                {
+                                    "Name": "refURI",
+                                    "AttributeDataType": "xs:anyURI",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/refURI"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseInterface",
+                            "InterfaceClass": [
+                                {
+                                    "Name": "COLLADAInterface",
+                                    "RefBaseClassPath": "ExternalDataConnector"
+                                },
+                                {
+                                    "Name": "PLCopenXMLInterface",
+                                    "RefBaseClassPath": "ExternalDataConnector"
+                                },
+                                {
+                                    "Name": "ExternalDataReference",
+                                    "Attribute": [
+                                        {
+                                            "Name": "MIMEType",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "AutomationMLBaseAttributeTypeLib/MIMEType"
+                                        }
+                                    ],
+                                    "RefBaseClassPath": "ExternalDataConnector"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Communication",
+                            "RefBaseClassPath": "AutomationMLBaseInterface",
+                            "InterfaceClass": [
+                                {
+                                    "Name": "SignalInterface",
+                                    "RefBaseClassPath": "Communication"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "RoleClassLib": [
+        {
+            "Description": {
+                "value": "Automation Markup Language base role class library"
+            },
+            "Version": {
+                "value": "2.10.0"
+            },
+            "Name": "AutomationMLBaseRoleClassLib",
+            "RoleClass": [
+                {
+                    "Name": "AutomationMLBaseRole",
+                    "RoleClass": [
+                        {
+                            "Name": "Group",
+                            "Attribute": [
+                                {
+                                    "Name": "AssociatedFacet",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/AssociatedFacet"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Facet",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Resource",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Product",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Process",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Structure",
+                            "RefBaseClassPath": "AutomationMLBaseRole",
+                            "RoleClass": [
+                                {
+                                    "Name": "ProductStructure",
+                                    "RefBaseClassPath": "Structure"
+                                },
+                                {
+                                    "Name": "ProcessStructure",
+                                    "RefBaseClassPath": "Structure"
+                                },
+                                {
+                                    "Name": "ResourceStructure",
+                                    "RefBaseClassPath": "Structure"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "ExternalData",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "RuntimeDataRoleClassLib",
+            "RoleClass": [
+                {
+                    "Name": "ProductRoleClass",
+                    "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product",
+                    "RoleClass": [
+                        {
+                            "Name": "InputMaterialRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Quantity",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                                },
+                                {
+                                    "Name": "Deviation",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                },
+                                {
+                                    "Name": "EnergyFootPrint",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyFootPrint"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product"
+                        },
+                        {
+                            "Name": "IntermediateMaterialRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Quantity",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                                },
+                                {
+                                    "Name": "Deviation",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product"
+                        },
+                        {
+                            "Name": "FinalProductRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Quantity",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                                },
+                                {
+                                    "Name": "Deviation",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product"
+                        }
+                    ]
+                },
+                {
+                    "Name": "ProcessRoleClass",
+                    "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process",
+                    "RoleClass": [
+                        {
+                            "Name": "WeldingRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Current",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                },
+                                {
+                                    "Name": "Duration",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                },
+                                {
+                                    "Name": "Deviation",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process"
+                        },
+                        {
+                            "Name": "ScrewingRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Current",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                },
+                                {
+                                    "Name": "Duration",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                },
+                                {
+                                    "Name": "Deviation",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                },
+                                {
+                                    "Name": "Torque",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Torque"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process"
+                        },
+                        {
+                            "Name": "RivetingRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Current",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                },
+                                {
+                                    "Name": "Duration",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                },
+                                {
+                                    "Name": "Deviation",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                },
+                                {
+                                    "Name": "Pressure",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Pressure"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process"
+                        }
+                    ]
+                },
+                {
+                    "Name": "ResourceRoleClass",
+                    "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource",
+                    "RoleClass": [
+                        {
+                            "Name": "WeldingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Current",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                },
+                                {
+                                    "Name": "Duration",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                },
+                                {
+                                    "Name": "Temperature",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Temperature"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                },
+                                {
+                                    "Name": "RunName",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "ScrewingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Duration",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                },
+                                {
+                                    "Name": "Torque",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Torque"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "RivetingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Duration",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                },
+                                {
+                                    "Name": "Pressure",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Pressure"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "FixingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                },
+                                {
+                                    "Name": "ClampingForce",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ClampingForce"
+                                },
+                                {
+                                    "Name": "Current",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "QualityControlUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "Duration",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                                },
+                                {
+                                    "Name": "Deviation",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "CellRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                                },
+                                {
+                                    "Name": "EnergyConsumption",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "SystemUnitClassLib": [
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "RuntimeDataSystemUnitClassLib",
+            "SystemUnitClass": [
+                {
+                    "ID": "f208a7ab-0658-4822-a90c-4de38b5ff2b4",
+                    "Name": "WeldingRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Current",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                        },
+                        {
+                            "Name": "Duration",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                        },
+                        {
+                            "Name": "Deviation",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/WeldingRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "ebbd7e45-c074-45c8-9c6e-ccd5e383e2bb",
+                    "Name": "ScrewingRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Current",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                        },
+                        {
+                            "Name": "Duration",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                        },
+                        {
+                            "Name": "Deviation",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                        },
+                        {
+                            "Name": "Torque",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Torque"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/ScrewingRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "7ad65e3c-53ab-4deb-abaa-cdd7bb2cb9b7",
+                    "Name": "RivetingRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Current",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                        },
+                        {
+                            "Name": "Duration",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                        },
+                        {
+                            "Name": "Deviation",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                        },
+                        {
+                            "Name": "Pressure",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Pressure"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/RivetingRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "7d9f1829-c499-42ee-81ab-e874307185a2",
+                    "Name": "InputMaterialRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Quantity",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                        },
+                        {
+                            "Name": "Deviation",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                        },
+                        {
+                            "Name": "EnergyFootPrint",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyFootPrint"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/InputMaterialRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "ceb8c218-30d0-4751-bd70-caebdf0ff102",
+                    "Name": "IntermediateMaterialRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Quantity",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                        },
+                        {
+                            "Name": "Deviation",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "7e9564a0-2f98-4746-bcfb-e2da468862ea",
+                    "Name": "FinalProductRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Quantity",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                        },
+                        {
+                            "Name": "Deviation",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/FinalProductRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "73a5ac60-f39d-4888-a1bd-9766e3148393",
+                    "Name": "WeldingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Current",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                        },
+                        {
+                            "Name": "Duration",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                        },
+                        {
+                            "Name": "Temperature",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Temperature"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/WeldingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "1f1db05e-0e79-4313-ab4a-55bf1df18514",
+                    "Name": "ScrewingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Duration",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                        },
+                        {
+                            "Name": "Torque",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Torque"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/ScrewingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "e691a287-b6d6-4a67-b5c8-8b291cdb58a0",
+                    "Name": "RivetingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Duration",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                        },
+                        {
+                            "Name": "Pressure",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Pressure"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/RivetingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "6333f80c-dbd2-4e75-be1f-211b2247fe80",
+                    "Name": "FixingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        },
+                        {
+                            "Name": "ClampingForce",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ClampingForce"
+                        },
+                        {
+                            "Name": "Current",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/FixingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "963e2813-3461-44b7-be27-d7e888cb58ee",
+                    "Name": "QualityControlUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "Duration",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                        },
+                        {
+                            "Name": "Deviation",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/QualityControlUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "e1d526d7-8b64-48a8-af19-91cc86d97303",
+                    "Name": "CellRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/ID"
+                        },
+                        {
+                            "Name": "EnergyConsumption",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/CellRoleClass"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "AttributeTypeLib": [
+        {
+            "Description": {
+                "value": "Standard Automation Markup Language Attribute Type Library"
+            },
+            "Version": {
+                "value": "2.10.0"
+            },
+            "Name": "AutomationMLBaseAttributeTypeLib",
+            "AttributeType": [
+                {
+                    "Name": "Direction",
+                    "Constraint": [
+                        {
+                            "NominalScaledType": {
+                                "RequiredValue": [
+                                    "In",
+                                    "Out",
+                                    "InOut"
+                                ]
+                            },
+                            "Name": "AllowedValues"
+                        }
+                    ],
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Cardinality",
+                    "Attribute": [
+                        {
+                            "Name": "MinOccur",
+                            "AttributeDataType": "xs:unsignedInt"
+                        },
+                        {
+                            "Name": "MaxOccur",
+                            "AttributeDataType": "xs:unsignedInt"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Category",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "refURI",
+                    "AttributeDataType": "xs:anyURI"
+                },
+                {
+                    "Name": "AssociatedFacet",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "ListType"
+                },
+                {
+                    "Name": "OrderedListType"
+                },
+                {
+                    "Name": "LocalizedAttribute",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "AssociatedExternalValue",
+                    "Attribute": [
+                        {
+                            "Name": "refCAEXAttribute"
+                        },
+                        {
+                            "Name": "refURI",
+                            "RefAttributeType": "AutomationMLBaseAttributeTypeLib/refURI"
+                        },
+                        {
+                            "Name": "Direction",
+                            "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Direction"
+                        }
+                    ]
+                },
+                {
+                    "Name": "MIMEType",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "DocLang",
+                    "AttributeDataType": "xs:string"
+                }
+            ]
+        },
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "RuntimeAttributeTypeLib",
+            "AttributeType": [
+                {
+                    "Name": "RunName",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "ID",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Current",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Duration",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Temperature",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Deviation",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Torque",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Pressure",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "EnergyFootPrint",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "EnergyConsumption",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "ClampingForce",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Quantity",
+                    "AttributeDataType": "xs:string"
+                }
+            ]
+        }
+    ],
+    "SchemaVersion": "3.0",
+    "FileName": "Beispiel_Gelenk_V4_manual_RuntimeData.aml"
+}

@@ -1,0 +1,583 @@
+{
+    "IH_views": [
+        {
+            "id": "101",
+            "asset_name": "Plate",
+            "view_name": "str",
+            "view": {
+                "ID": "2d11833c-d4e9-4bd0-b596-78bf8f0242e6",
+                "Name": "Plate",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "101",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Quantity",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                    },
+                    {
+                        "Name": "Deviation",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                    },
+                    {
+                        "Name": "EnergyFootPrint",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyFootPrint"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/InputMaterialRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/InputMaterialRoleClass"
+            }
+        },
+        {
+            "id": "301",
+            "asset_name": "NutWelding",
+            "view_name": "str",
+            "view": {
+                "ID": "7b6afea1-e7e7-4450-9f2d-996ce2fbed6e",
+                "Name": "NutWelding",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "301",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Current",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                    },
+                    {
+                        "Name": "Duration",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                    },
+                    {
+                        "Name": "Deviation",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/WeldingRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/WeldingRoleClass"
+            }
+        },
+        {
+            "id": "201",
+            "asset_name": "WeldingUnit",
+            "view_name": "str",
+            "view": {
+                "ID": "d2790d29-164d-4a04-8b0c-e7dacbd87bb1",
+                "Name": "WeldingUnit",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "201",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Current",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                    },
+                    {
+                        "Name": "Duration",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                    },
+                    {
+                        "Name": "Temperature",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Temperature"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/WeldingUnitRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/WeldingUnitRoleClass"
+            }
+        },
+        {
+            "id": "102",
+            "asset_name": "WeldedPlate",
+            "view_name": "str",
+            "view": {
+                "ID": "fe8c65e1-6d94-4e3c-88e7-98d1f9d68291",
+                "Name": "WeldedPlate",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "102",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Quantity",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                    },
+                    {
+                        "Name": "Deviation",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/IntermediateMaterialRoleClass"
+            }
+        },
+        {
+            "id": "302",
+            "asset_name": "BoltScrewing",
+            "view_name": "str",
+            "view": {
+                "ID": "ef7930d2-2906-466b-b648-8a3994cbaed9",
+                "Name": "BoltScrewing",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "302",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Current",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                    },
+                    {
+                        "Name": "Duration",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                    },
+                    {
+                        "Name": "Deviation",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                    },
+                    {
+                        "Name": "Torque",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Torque"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/ScrewingRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/ScrewingRoleClass"
+            }
+        },
+        {
+            "id": "202",
+            "asset_name": "Cell",
+            "view_name": "str",
+            "view": {
+                "ID": "ebf56d81-e656-4a83-be0c-1c57e5f81463",
+                "Name": "Cell",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "202",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/CellRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/CellRoleClass"
+            }
+        },
+        {
+            "id": "203",
+            "asset_name": "ScrewingUnit",
+            "view_name": "str",
+            "view": {
+                "ID": "1082a667-2573-48ff-9e3a-8f6c1db28ecb",
+                "Name": "ScrewingUnit",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "203",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Duration",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                    },
+                    {
+                        "Name": "Torque",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Torque"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/ScrewingUnitRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/ScrewingUnitRoleClass"
+            }
+        },
+        {
+            "id": "204",
+            "asset_name": "FixingUnit",
+            "view_name": "str",
+            "view": {
+                "ID": "92039852-5f4c-4c8a-9098-a629255c6bb5",
+                "Name": "FixingUnit",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "204",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    },
+                    {
+                        "Name": "ClampingForce",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/ClampingForce"
+                    },
+                    {
+                        "Name": "Current",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/FixingUnitRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/FixingUnitRoleClass"
+            }
+        },
+        {
+            "id": "205",
+            "asset_name": "QualityControlUnit",
+            "view_name": "str",
+            "view": {
+                "ID": "f4459f02-93ef-4e63-9595-7e36df3210ce",
+                "Name": "QualityControlUnit",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "205",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Duration",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                    },
+                    {
+                        "Name": "Deviation",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/QualityControlUnitRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/QualityControlUnitRoleClass"
+            }
+        },
+        {
+            "id": "103",
+            "asset_name": "PlateWithBolt",
+            "view_name": "str",
+            "view": {
+                "ID": "8c8ed2e1-0c45-4f04-aa12-711cd284725a",
+                "Name": "PlateWithBolt",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "103",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Quantity",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                    },
+                    {
+                        "Name": "Deviation",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/IntermediateMaterialRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/IntermediateMaterialRoleClass"
+            }
+        },
+        {
+            "id": "303",
+            "asset_name": "RRiveting",
+            "view_name": "str",
+            "view": {
+                "ID": "e8cce258-2a31-4668-9658-7ccee50c32d6",
+                "Name": "RRiveting",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "303",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Current",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Current"
+                    },
+                    {
+                        "Name": "Duration",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                    },
+                    {
+                        "Name": "Deviation",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                    },
+                    {
+                        "Name": "Pressure",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Pressure"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProcessRoleClass/RivetingRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/RivetingRoleClass"
+            }
+        },
+        {
+            "id": "206",
+            "asset_name": "RivetingUnit",
+            "view_name": "str",
+            "view": {
+                "ID": "d1c40989-0527-47f1-8686-3f3a41a75d67",
+                "Name": "RivetingUnit",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "206",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Duration",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Duration"
+                    },
+                    {
+                        "Name": "Pressure",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Pressure"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ResourceRoleClass/RivetingUnitRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/RivetingUnitRoleClass"
+            }
+        },
+        {
+            "id": "104",
+            "asset_name": "FinalProductRoleClass",
+            "view_name": "str",
+            "view": {
+                "ID": "b2506139-340c-4229-8a0c-6a434bc5d7b5",
+                "Name": "FinalProductRoleClass",
+                "Attribute": [
+                    {
+                        "Name": "Name",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/RunName"
+                    },
+                    {
+                        "Name": "id",
+                        "Value": "104",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/id"
+                    },
+                    {
+                        "Name": "Quantity",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Quantity"
+                    },
+                    {
+                        "Name": "Deviation",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/Deviation"
+                    },
+                    {
+                        "Name": "EnergyConsumption",
+                        "AttributeDataType": "xs:string",
+                        "RefAttributeType": "RuntimeAttributeTypeLib/EnergyConsumption"
+                    }
+                ],
+                "RoleRequirements": [
+                    {
+                        "RefBaseRoleClassPath": "RuntimeDataRoleClassLib/ProductRoleClass/FinalProductRoleClass"
+                    }
+                ],
+                "RefBaseSystemUnitPath": "RuntimeDataSystemUnitClassLib/FinalProductRoleClass"
+            }
+        }
+    ]
+}

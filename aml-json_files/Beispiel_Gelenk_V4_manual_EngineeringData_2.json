@@ -1,0 +1,854 @@
+{
+    "AdditionalInformation": [
+        {}
+    ],
+    "SuperiorStandardVersion": [
+        "AutomationML 2.10"
+    ],
+    "SourceDocumentInformation": [
+        {
+            "OriginName": "AutomationML Editor",
+            "OriginID": "916578CA-FE0D-474E-A4FC-9E1719892369",
+            "OriginVendor": "AutomationML e.V.",
+            "OriginVendorURL": "www.AutomationML.org",
+            "OriginVersion": "6.1.7.0",
+            "OriginRelease": "6.1.7.0",
+            "LastWritingDateTime": "2023-09-05T14:10:32.866484800+02:00",
+            "OriginProjectTitle": "unspecified",
+            "OriginProjectID": "unspecified"
+        }
+    ],
+    "InstanceHierarchy": [
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "InstanceHierarchy",
+            "InternalElement": [
+                {
+                    "ID": "f48aea8a-e0c9-49a5-b67a-05372686671a",
+                    "Name": "Engg_plant",
+                    "InternalElement": [
+                        {
+                            "ID": "55929c6c-7c0a-4db7-9554-183be7cfefde",
+                            "Name": "WeldingUnit",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "Value": "201",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "MaxTemperature",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/MaxTemperature"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/WeldingUnitRoleClass"
+                                }
+                            ],
+                            "RefBaseSystemUnitPath": "EngineeringDataSystemUnitClassLib/WeldingUnitRoleClass"
+                        },
+                        {
+                            "ID": "04fa93e4-e774-4510-bdbd-8cf1ac7a8302",
+                            "Name": "Cell",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "Value": "202",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/CellRoleClass"
+                                }
+                            ],
+                            "RefBaseSystemUnitPath": "EngineeringDataSystemUnitClassLib/CellRoleClass"
+                        },
+                        {
+                            "ID": "5dd03949-d4ed-4137-8d31-0a4e2f48a410",
+                            "Name": "ScrewingUnit",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "id",
+                                    "Value": "203",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "MaxTorque",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/MaxTorque"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/ScrewingUnitRoleClass"
+                                }
+                            ],
+                            "RefBaseSystemUnitPath": "EngineeringDataSystemUnitClassLib/ScrewingUnitRoleClass"
+                        },
+                        {
+                            "ID": "fb1c3af1-fd24-486e-884c-e6ffa2851541",
+                            "Name": "FixingUnit",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "id",
+                                    "Value": "204",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "MechanicalClearance",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/MechanicalClearance"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/FixingUnitRoleClass"
+                                }
+                            ],
+                            "RefBaseSystemUnitPath": "EngineeringDataSystemUnitClassLib/FixingUnitRoleClass"
+                        },
+                        {
+                            "ID": "2a76b4bb-9700-499f-ab98-30c488589f09",
+                            "Name": "QualityControlUnit",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "id",
+                                    "Value": "205",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "Tolerance",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/Tolerance"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/QualityControl"
+                                }
+                            ],
+                            "RefBaseSystemUnitPath": "EngineeringDataSystemUnitClassLib/QualityControl"
+                        },
+                        {
+                            "ID": "e6225ac7-24c8-425a-80e0-4bedeb966a9d",
+                            "Name": "RivetingUnit",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "id",
+                                    "Value": "206",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "MaxPressure",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/MaxPressure"
+                                }
+                            ],
+                            "RoleRequirements": [
+                                {
+                                    "RefBaseRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/RivetingUnitRoleClass"
+                                }
+                            ],
+                            "RefBaseSystemUnitPath": "EngineeringDataSystemUnitClassLib/RivetingUnitRoleClass"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "InterfaceClassLib": [
+        {
+            "Description": {
+                "value": "Standard Automation Markup Language Interface Class Library"
+            },
+            "Version": {
+                "value": "2.10.0"
+            },
+            "Name": "AutomationMLInterfaceClassLib",
+            "InterfaceClass": [
+                {
+                    "Name": "AutomationMLBaseInterface",
+                    "InterfaceClass": [
+                        {
+                            "Name": "Order",
+                            "Attribute": [
+                                {
+                                    "Name": "Direction",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Direction"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseInterface"
+                        },
+                        {
+                            "Name": "Port",
+                            "Attribute": [
+                                {
+                                    "Name": "Direction",
+                                    "Constraint": [
+                                        {
+                                            "NominalScaledType": {
+                                                "RequiredValue": [
+                                                    "In",
+                                                    "Out",
+                                                    "InOut"
+                                                ]
+                                            },
+                                            "Name": "AllowedValues"
+                                        }
+                                    ],
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Direction"
+                                },
+                                {
+                                    "Name": "Cardinality",
+                                    "Attribute": [
+                                        {
+                                            "Name": "MinOccur",
+                                            "AttributeDataType": "xs:unsignedInt"
+                                        },
+                                        {
+                                            "Name": "MaxOccur",
+                                            "AttributeDataType": "xs:unsignedInt"
+                                        }
+                                    ],
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Cardinality"
+                                },
+                                {
+                                    "Name": "Category",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Category"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseInterface"
+                        },
+                        {
+                            "Name": "PPRConnector",
+                            "RefBaseClassPath": "AutomationMLBaseInterface"
+                        },
+                        {
+                            "Name": "ExternalDataConnector",
+                            "Attribute": [
+                                {
+                                    "Name": "refURI",
+                                    "AttributeDataType": "xs:anyURI",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/refURI"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseInterface",
+                            "InterfaceClass": [
+                                {
+                                    "Name": "COLLADAInterface",
+                                    "RefBaseClassPath": "ExternalDataConnector"
+                                },
+                                {
+                                    "Name": "PLCopenXMLInterface",
+                                    "RefBaseClassPath": "ExternalDataConnector"
+                                },
+                                {
+                                    "Name": "ExternalDataReference",
+                                    "Attribute": [
+                                        {
+                                            "Name": "MIMEType",
+                                            "AttributeDataType": "xs:string",
+                                            "RefAttributeType": "AutomationMLBaseAttributeTypeLib/MIMEType"
+                                        }
+                                    ],
+                                    "RefBaseClassPath": "ExternalDataConnector"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Communication",
+                            "RefBaseClassPath": "AutomationMLBaseInterface",
+                            "InterfaceClass": [
+                                {
+                                    "Name": "SignalInterface",
+                                    "RefBaseClassPath": "Communication"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "RoleClassLib": [
+        {
+            "Description": {
+                "value": "Automation Markup Language base role class library"
+            },
+            "Version": {
+                "value": "2.10.0"
+            },
+            "Name": "AutomationMLBaseRoleClassLib",
+            "RoleClass": [
+                {
+                    "Name": "AutomationMLBaseRole",
+                    "RoleClass": [
+                        {
+                            "Name": "Group",
+                            "Attribute": [
+                                {
+                                    "Name": "AssociatedFacet",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "AutomationMLBaseAttributeTypeLib/AssociatedFacet"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Facet",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Resource",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Product",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Process",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        },
+                        {
+                            "Name": "Structure",
+                            "RefBaseClassPath": "AutomationMLBaseRole",
+                            "RoleClass": [
+                                {
+                                    "Name": "ProductStructure",
+                                    "RefBaseClassPath": "Structure"
+                                },
+                                {
+                                    "Name": "ProcessStructure",
+                                    "RefBaseClassPath": "Structure"
+                                },
+                                {
+                                    "Name": "ResourceStructure",
+                                    "RefBaseClassPath": "Structure"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "ExternalData",
+                            "RefBaseClassPath": "AutomationMLBaseRole"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "EngineeringDataRoleClassLib",
+            "RoleClass": [
+                {
+                    "Name": "ProductRoleClass",
+                    "ExternalInterface": [
+                        {
+                            "ID": "df208504-d570-4fb0-a970-5caec5a00207",
+                            "Name": "PP_RelationInterfaceClass"
+                        }
+                    ],
+                    "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product"
+                },
+                {
+                    "Name": "ProcessRoleClass",
+                    "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process"
+                },
+                {
+                    "Name": "ResourceRoleClass",
+                    "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource",
+                    "RoleClass": [
+                        {
+                            "Name": "WeldingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "MaxTemperature",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/MaxTemperature"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "ScrewingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "MaxTorque",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/MaxTorque"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "FixingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "MechanicalClearance",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/MechanicalClearance"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "QualityControl",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "Tolerance",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/Tolerance"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "RivetingUnitRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                },
+                                {
+                                    "Name": "MaxPressure",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/MaxPressure"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        },
+                        {
+                            "Name": "CellRoleClass",
+                            "Attribute": [
+                                {
+                                    "Name": "Name",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                                },
+                                {
+                                    "Name": "ID",
+                                    "AttributeDataType": "xs:string",
+                                    "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                                }
+                            ],
+                            "RefBaseClassPath": "AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "SystemUnitClassLib": [
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "EngineeringDataSystemUnitClassLib",
+            "SystemUnitClass": [
+                {
+                    "ID": "ee2cab56-614b-4383-8be0-847453e1053f",
+                    "Name": "WeldingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                        },
+                        {
+                            "Name": "MaxTemperature",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/MaxTemperature"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/WeldingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "a4319a96-f33c-4729-afb2-5ce5f1be69a3",
+                    "Name": "ScrewingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                        },
+                        {
+                            "Name": "MaxTorque",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/MaxTorque"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/ScrewingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "4b557114-64bf-41c0-82dc-082b167ba2cb",
+                    "Name": "FixingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                        },
+                        {
+                            "Name": "MechanicalClearance",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/MechanicalClearance"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/FixingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "796c14c3-95bf-4e74-aeb9-24d55e453a47",
+                    "Name": "QualityControl",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                        },
+                        {
+                            "Name": "Tolerance",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/Tolerance"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/QualityControl"
+                        }
+                    ]
+                },
+                {
+                    "ID": "cc87dde4-c04e-4542-8b3a-cc0aa4873cdd",
+                    "Name": "RivetingUnitRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                        },
+                        {
+                            "Name": "MaxPressure",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/MaxPressure"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/RivetingUnitRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "0617095e-d5df-45e0-a4d4-b3e8a62d6e1c",
+                    "Name": "CellRoleClass",
+                    "Attribute": [
+                        {
+                            "Name": "Name",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/EnggName"
+                        },
+                        {
+                            "Name": "ID",
+                            "AttributeDataType": "xs:string",
+                            "RefAttributeType": "EngineeringAttributeTypeLib/id"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass/CellRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "ff882dcd-63d4-4b7e-971a-3057f0e4a039",
+                    "Name": "ResourceRoleClass",
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "EngineeringDataRoleClassLib/ResourceRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "dadb06ad-17ac-469a-84bb-6aa5a0117b52",
+                    "Name": "ProcessRoleClass",
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "EngineeringDataRoleClassLib/ProcessRoleClass"
+                        }
+                    ]
+                },
+                {
+                    "ID": "d366e063-f149-431e-bf7c-ff9cecb3c659",
+                    "Name": "ProductRoleClass",
+                    "ExternalInterface": [
+                        {
+                            "ID": "2438f435-62f8-4043-ba2b-1b48064fbb33",
+                            "Name": "PP_RelationInterfaceClass"
+                        }
+                    ],
+                    "SupportedRoleClass": [
+                        {
+                            "RefRoleClassPath": "EngineeringDataRoleClassLib/ProductRoleClass"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "AttributeTypeLib": [
+        {
+            "Description": {
+                "value": "Standard Automation Markup Language Attribute Type Library"
+            },
+            "Version": {
+                "value": "2.10.0"
+            },
+            "Name": "AutomationMLBaseAttributeTypeLib",
+            "AttributeType": [
+                {
+                    "Name": "Direction",
+                    "Constraint": [
+                        {
+                            "NominalScaledType": {
+                                "RequiredValue": [
+                                    "In",
+                                    "Out",
+                                    "InOut"
+                                ]
+                            },
+                            "Name": "AllowedValues"
+                        }
+                    ],
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Cardinality",
+                    "Attribute": [
+                        {
+                            "Name": "MinOccur",
+                            "AttributeDataType": "xs:unsignedInt"
+                        },
+                        {
+                            "Name": "MaxOccur",
+                            "AttributeDataType": "xs:unsignedInt"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Category",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "refURI",
+                    "AttributeDataType": "xs:anyURI"
+                },
+                {
+                    "Name": "AssociatedFacet",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "ListType"
+                },
+                {
+                    "Name": "OrderedListType"
+                },
+                {
+                    "Name": "LocalizedAttribute",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "AssociatedExternalValue",
+                    "Attribute": [
+                        {
+                            "Name": "refCAEXAttribute"
+                        },
+                        {
+                            "Name": "refURI",
+                            "RefAttributeType": "AutomationMLBaseAttributeTypeLib/refURI"
+                        },
+                        {
+                            "Name": "Direction",
+                            "RefAttributeType": "AutomationMLBaseAttributeTypeLib/Direction"
+                        }
+                    ]
+                },
+                {
+                    "Name": "MIMEType",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "DocLang",
+                    "AttributeDataType": "xs:string"
+                }
+            ]
+        },
+        {
+            "Version": {
+                "value": "0"
+            },
+            "Name": "EngineeringAttributeTypeLib",
+            "AttributeType": [
+                {
+                    "Name": "EnggName",
+                    "Value": "engg",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "id",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "MaxTemperature",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "MaxTorque",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "MechanicalClearance",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "Tolerance",
+                    "AttributeDataType": "xs:string"
+                },
+                {
+                    "Name": "MaxPressure",
+                    "AttributeDataType": "xs:string"
+                }
+            ]
+        }
+    ],
+    "SchemaVersion": "3.0",
+    "FileName": "Beispiel_Gelenk_V4_manual_EngineeringData_2.aml"
+}
