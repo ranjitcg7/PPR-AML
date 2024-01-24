@@ -52,7 +52,6 @@ pyparsing==3.0.9
 pyrsistent==0.19.3
 pytz==2023.3
 pytz-deprecation-shim==0.1.0.post0
-pywin32==305.1
 rdflib==6.3.2
 requests==2.31.0
 rich==13.3.4
