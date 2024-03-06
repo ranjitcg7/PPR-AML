@@ -1,0 +1,140 @@
+<export date="20190912" time="193945" lang="DE" contextName="UltrasonicMasurementCell" contextID="1cd7ed82-9219-4489-8477-3ca91fff57b9">
+ <N_FS_PRO id="1cd7ed82-9219-4489-8477-3ca91fff57b9">
+  <F_PXNAME>UltrasonicMasurementCell</F_PXNAME>
+  <F_PXTEXT>TestExportForUltrasonicMasurementCell</F_PXTEXT>
+  <F_KUNNAME>CDL_SQI</F_KUNNAME>
+  <F_KUNNR>Uni Magdeburg AND TU Wien</F_KUNNR>
+  <N_FS_ANL id="InstanceHierarchy001">
+   <F_PXNAME>InstanceHierarchy</F_PXNAME>
+   <F_PXTEXT>InstanceHierarchy_in_AML_file</F_PXTEXT>
+      <N_FS_MAS id="Plant002">
+       <F_PXNAME>Plant</F_PXNAME>
+       <F_PXTEXT>Multiple_FischertechnikMaschinensystems</F_PXTEXT>
+
+
+
+       <N_FS_FGR id="201">
+        <F_PXNAME>WeldingUnit</F_PXNAME>
+        <F_PXTEXT/>
+        <N_FS_ANT id="201_1">
+         <F_PXNAME>WeldingUnit.Drive</F_PXNAME>
+         <F_PXTEXT>Motion_Transmission</F_PXTEXT>
+         <F_CODE>DRIVE</F_CODE>
+         <F_CODE_TEXT>DC motor</F_CODE_TEXT>
+         <F_ZZ_LIEFERA>Some Drive Provider</F_ZZ_LIEFERA>
+         <F_ZZ_TYPBEZ/>
+         <F_MFRPN>ABC 123 DEF 456.78 GH </F_MFRPN>
+         <F_SUPPLY_LINE>10</F_SUPPLY_LINE>
+         <F_GROES>22</F_GROES>
+         <F_CURRNT>220</F_CURRNT>
+         <F_SPEED_HIGH>1000 </F_SPEED_HIGH>
+         
+
+        </N_FS_ANT>
+
+        <N_FS_FEG id="201_2">
+         <F_PXNAME>WeldingUnit.WeldingGun</F_PXNAME>
+         <F_PXTEXT>Welding_tool</F_PXTEXT>
+         <F_CODE>InductiveProximitySwitch</F_CODE>
+         <F_CODE_TEXT>Gearing . motion transmission</F_CODE_TEXT>
+         <F_TRANL>1:1000</F_TRANL>
+         <F_MFRPN>XZY098</F_MFRPN>
+         <F_ZZ_LIEFERA>Some Gearbox provider</F_ZZ_LIEFERA>
+         <F_ZZ_TYPBEZ>aType</F_ZZ_TYPBEZ>
+         <F_AML_ATTR_MAX_TEMP>200</F_AML_ATTR_MAX_TEMP>
+        </N_FS_FEG>
+       </N_FS_FGR>
+
+
+
+
+       <N_FS_FGR id="202">
+        <F_PXNAME>Cell</F_PXNAME>
+        <F_PXTEXT/>
+        <N_FS_FEG id="ID_202_1">
+         <F_PXNAME>Station</F_PXNAME>
+         <F_PXTEXT>Working_station</F_PXTEXT>
+         <F_CODE>Fence</F_CODE>
+         <F_CODE_TEXT>Gearing . motion transmission</F_CODE_TEXT>
+         <F_TRANL>1:1000</F_TRANL>
+         <F_MFRPN>XZY098</F_MFRPN>
+         <F_ZZ_LIEFERA>SomeFenceprovider</F_ZZ_LIEFERA>
+         <F_ZZ_TYPBEZ>aType</F_ZZ_TYPBEZ>
+        </N_FS_FEG>
+       </N_FS_FGR>
+
+
+
+
+       <N_FS_FGR id="203">
+        <F_PXNAME>ScrewingUnit</F_PXNAME>
+        <F_PXTEXT/>
+        <N_FS_FEG id="203_1">
+         <F_PXNAME>ScrewingTool</F_PXNAME>
+         <F_PXTEXT>Motion_Transmission</F_PXTEXT>
+         <F_CODE>SCREWING</F_CODE>
+         <F_CODE_TEXT>SCREWING . motion transmission</F_CODE_TEXT>
+         <F_TRANL>1:1000</F_TRANL>
+         <F_MFRPN>XZY098</F_MFRPN>
+         <F_ZZ_LIEFERA>Some Gearbox provider</F_ZZ_LIEFERA>
+         <F_ZZ_TYPBEZ>aType</F_ZZ_TYPBEZ>
+         <F_AML_ATTR_MAX_TORQUE>10</F_AML_ATTR_MAX_TORQUE>
+        </N_FS_FEG>
+       </N_FS_FGR>
+
+
+
+       <N_FS_FGR id="204">
+        <F_PXNAME>FixingUnit</F_PXNAME>
+        <F_PXTEXT/>
+        <N_FS_FEG id="ID_204_1">
+         <F_PXNAME>FixingTool</F_PXNAME>
+         <F_PXTEXT>Motion_Transmission</F_PXTEXT>
+         <F_CODE>SCREWING</F_CODE>
+         <F_CODE_TEXT>FIXING . motion transmission</F_CODE_TEXT>
+         <F_TRANL>1:1000</F_TRANL>
+         <F_MFRPN>XZY098</F_MFRPN>
+         <F_ZZ_LIEFERA>Some Gearbox provider</F_ZZ_LIEFERA>
+         <F_ZZ_TYPBEZ>aType</F_ZZ_TYPBEZ>
+         <F_AML_ATTR_MECHANICAL_CLEARANCE>5</F_AML_ATTR_MECHANICAL_CLEARANCE>
+        </N_FS_FEG>
+       </N_FS_FGR>
+
+
+       <N_FS_FGR id="205">
+        <F_PXNAME>QualityControlUnit</F_PXNAME>
+        <F_PXTEXT/>
+        <N_FS_FEG id="ID_205_1">
+         <F_PXNAME>QCTool</F_PXNAME>
+         <F_PXTEXT>Motion_Transmission</F_PXTEXT>
+         <F_CODE>QC</F_CODE>
+         <F_CODE_TEXT>QC . motion transmission</F_CODE_TEXT>
+         <F_TRANL>1:1000</F_TRANL>
+         <F_MFRPN>XZY098</F_MFRPN>
+         <F_ZZ_LIEFERA>Some Gearbox provider</F_ZZ_LIEFERA>
+         <F_ZZ_TYPBEZ>aType</F_ZZ_TYPBEZ>
+         <F_AML_ATTR_TOLERANCE>5</F_AML_ATTR_TOLERANCE>
+        </N_FS_FEG>
+       </N_FS_FGR>
+
+
+       <N_FS_FGR id="206">
+        <F_PXNAME>RivetingUnit</F_PXNAME>
+        <F_PXTEXT/>
+        <N_FS_FEG id="206_1">
+         <F_PXNAME>RivetingTool</F_PXNAME>
+         <F_PXTEXT>Motion_Transmission</F_PXTEXT>
+         <F_CODE>Riveting</F_CODE>
+         <F_CODE_TEXT>Riveting . motion transmission</F_CODE_TEXT>
+         <F_TRANL>1:1000</F_TRANL>
+         <F_MFRPN>XZY098</F_MFRPN>
+         <F_ZZ_LIEFERA>Some Gearbox provider</F_ZZ_LIEFERA>
+         <F_ZZ_TYPBEZ>aType</F_ZZ_TYPBEZ>
+         <F_AML_ATTR_MAX_PRESSURE>15</F_AML_ATTR_MAX_PRESSURE>
+        </N_FS_FEG>
+       </N_FS_FGR>
+
+      </N_FS_MAS>
+     </N_FS_ANL>
+    </N_FS_PRO>
+   </export>

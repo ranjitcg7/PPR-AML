@@ -1,0 +1,263 @@
+<?xml version ="1.0" encoding = "UTF-8" ?>
+<XPDMXML schemaVersion="2" xmlns="http://www.3ds.com/xsd/XPDMXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.3ds.com/xsd/XPDMXML XPDMXML.xsd">
+  <InfoHeader>
+    <Info name="CompletionType" value="Execution"/>
+    <Info name="FileFormat2D" value="CATIAV5R21"/>
+    <Info name="WithFiles" value="Yes"/>
+    <Info name="WithDocuments" value="Yes"/>
+    <Info name="FilterXPDMOwnedObjects" value="No"/>
+    <Info name="FileFormat3D" value="CATIAV5R21"/>
+    <Info name="GeometryType3D" value="Tessellated"/>
+    <Info name="SourceObjectRef" value="ID_4"/>
+  </InfoHeader>
+  <ProductTransformationStructure rootRefs="ID_100" updateParameterRelationMode="IgnoreExistingNotProvided">
+    <ManufacturingAssembly id="ID_100">
+      <ID>ID_100</ID>
+      <Name>Product</Name>
+    </ManufacturingAssembly>
+
+    <ProvidedPart id="ID_111">
+      <id>101</id>
+      <Name>InputMaterial</Name>
+      <Manufacturer_name>ABC_Manuf_Plate</Manufacturer_name>
+    </ProvidedPart>
+    <ProvidedPart id="ID_112">
+      <id>102</id>
+      <Name>WeldedPlate</Name>
+      <Manufacturer_name>ABC_Manuf_WeldedPlate</Manufacturer_name>
+    </ProvidedPart>   
+    <ProvidedPart id="ID_113">
+      <id>103</id>
+      <Name>PlateWithBolt</Name>
+      <Manufacturer_name>ABC_Manuf_PlateWithBolt</Manufacturer_name>
+    </ProvidedPart> 
+    <ProvidedPart id="ID_114">
+      <id>104</id>
+      <Name>FinalProduct</Name>
+      <Manufacturer_name>Diamond_Manuf_FinalProduct</Manufacturer_name>
+    </ProvidedPart>
+ 
+    <TransformationInst id="ID_101">
+      <ID>ID_101</ID>
+      <Name>Plate</Name>
+      <Owned>ID_100</Owned>
+      <Instancing>ID_111</Instancing>
+    </TransformationInst>
+    <TransformationInst id="ID_102">
+      <ID>ID_102</ID>
+      <Name>WeldedPlate</Name>
+      <Owned>ID_100</Owned>
+      <Instancing>ID_112</Instancing>
+    </TransformationInst>
+    <TransformationInst id="ID_103">
+      <ID>ID_103</ID>
+      <Name>PlateWithBolt</Name>
+      <Owned>ID_100</Owned>
+      <Instancing>ID_113</Instancing>
+    </TransformationInst>
+    <TransformationInst id="ID_104">
+      <ID>ID_104</ID>
+      <Name>FinalProduct</Name>
+      <Owned>ID_100</Owned>
+      <Instancing>ID_114</Instancing>
+    </TransformationInst>
+  </ProductTransformationStructure>
+
+
+  <ResourceStructure rootRefs="ID_200" updateParameterRelationMode="IgnoreExistingNotProvided">
+    <ManufacturingCell id="ID_200">
+      <ID>200</ID>
+      <Name>Workcenter</Name>
+    </ManufacturingCell>
+
+    <ToolEquipment id="ID_211" updateChildMode="IgnoreExistingNotProvided">
+      <id>201</id>
+      <Name>WeldingUnit</Name>
+      <Manufacturer_name>XYZ_Manuf_WeldingUnit</Manufacturer_name>
+      <R_attribute>ABCD1234</R_attribute>
+    </ToolEquipment>
+    <ResourceInst id="ID_201">
+      <ID>ID_201</ID>
+      <Name>WeldingUnit</Name>
+      <Owned>ID_200</Owned>
+      <Instancing>ID_211</Instancing>
+    </ResourceInst>
+    <ResourceImplementLink id="ID_221">
+      <ID>ID_221</ID>
+      <Owned>ID_200</Owned>
+      <UsedResourceRef>
+        <PathItem>ID_201</PathItem>
+		    <PathItem>ID_301</PathItem>
+      </UsedResourceRef>
+    </ResourceImplementLink>
+
+    <ToolEquipment id="ID_212" updateChildMode="IgnoreExistingNotProvided">
+      <id>202</id>
+      <Name>Cell</Name>
+      <Manufacturer_name>XYZ_Manuf_Cell</Manufacturer_name>
+      <R_attribute>ABCD1234</R_attribute>
+    </ToolEquipment>
+    <ResourceInst id="ID_202">
+      <ID>ID_202</ID>
+      <Name>Cell</Name>
+      <Owned>ID_200</Owned>
+      <Instancing>ID_212</Instancing>
+    </ResourceInst>
+    <ResourceImplementLink id="ID_222">
+      <ID>ID_222</ID>
+      <Owned>ID_200</Owned>
+      <UsedResourceRef>
+        <PathItem>ID_202</PathItem>
+		    <PathItem>ID_302</PathItem>
+      </UsedResourceRef>
+    </ResourceImplementLink>
+
+    <ToolEquipment id="ID_213" updateChildMode="IgnoreExistingNotProvided">
+      <id>203</id>
+      <Name>ScrewingUnit</Name>
+      <Manufacturer_name>XYZ_Manuf_ScrewingUnit</Manufacturer_name>
+      <R_attribute>ABCD1234</R_attribute>
+    </ToolEquipment>
+    <ResourceInst id="ID_203">
+      <ID>ID_203</ID>
+      <Name>ScrewingUnit</Name>
+      <Owned>ID_200</Owned>
+      <Instancing>ID_213</Instancing>
+    </ResourceInst>
+    <ResourceImplementLink id="ID_223">
+      <ID>ID_223</ID>
+      <Owned>ID_200</Owned>
+      <UsedResourceRef>
+        <PathItem>ID_203</PathItem>
+		    <PathItem>ID_202</PathItem>
+      </UsedResourceRef>
+    </ResourceImplementLink>
+
+    <ToolEquipment id="ID_214" updateChildMode="IgnoreExistingNotProvided">
+      <id>204</id>
+      <Name>FixingUnit</Name>
+      <Manufacturer_name>XYZ_Manuf_FixingUnit</Manufacturer_name>
+      <R_attribute>ABCD1234</R_attribute>
+    </ToolEquipment>
+    <ResourceInst id="ID_204">
+      <ID>ID_204</ID>
+      <Name>FixingUnit</Name>
+      <Owned>ID_200</Owned>
+      <Instancing>ID_214</Instancing>
+    </ResourceInst>
+    <ResourceImplementLink id="ID_224">
+      <ID>ID_224</ID>
+      <Owned>ID_200</Owned>
+      <UsedResourceRef>
+        <PathItem>ID_204</PathItem>
+		    <PathItem>ID_202</PathItem>
+      </UsedResourceRef>
+    </ResourceImplementLink>
+
+    <ToolEquipment id="ID_215" updateChildMode="IgnoreExistingNotProvided">
+      <id>205</id>
+      <Name>QualityControlUnit</Name>
+      <Manufacturer_name>XYZ_Manuf_QualityControlUnit</Manufacturer_name>
+      <R_attribute>ABCD1234</R_attribute>
+    </ToolEquipment>
+    <ResourceInst id="ID_205">
+      <ID>ID_205</ID>
+      <Name>QualityControlUnit</Name>
+      <Owned>ID_200</Owned>
+      <Instancing>ID_215</Instancing>
+    </ResourceInst>
+    <ResourceImplementLink id="ID_225">
+      <ID>ID_225</ID>
+      <Owned>ID_200</Owned>
+      <UsedResourceRef>
+        <PathItem>ID_205</PathItem>
+		    <PathItem>ID_202</PathItem>
+      </UsedResourceRef>
+    </ResourceImplementLink>
+
+    <ToolEquipment id="ID_216" updateChildMode="IgnoreExistingNotProvided">
+      <id>206</id>
+      <Name>RivetingUnit</Name>
+      <Manufacturer_name>XYZ_Manuf_RivetingUnit</Manufacturer_name>
+      <R_attribute>ABCD1234</R_attribute>
+    </ToolEquipment>
+    <ResourceInst id="ID_206">
+      <ID>ID_206</ID>
+      <Name>RivetingUnit</Name>
+      <Owned>ID_200</Owned>
+      <Instancing>ID_216</Instancing>
+    </ResourceInst>
+    <ResourceImplementLink id="ID_226">
+      <ID>ID_226</ID>
+      <Owned>ID_200</Owned>
+      <UsedResourceRef>
+        <PathItem>ID_206</PathItem>
+		    <PathItem>ID_303</PathItem>
+      </UsedResourceRef>
+    </ResourceImplementLink>
+
+  </ResourceStructure>
+
+
+  <ProcessPlanningStructure rootRefs="ID_300" updateParameterRelationMode="IgnoreExistingNotProvided">
+    <WorkPlan id="ID_300">
+      <ID>ID_300</ID>
+      <Name>Process</Name>
+    </WorkPlan>
+
+    <HeaderOperation id="ID_311">
+      <id>301</id>
+      <Name>NutWelding</Name>
+      <Manufacturer_name>PQR_Manuf_NutWelding</Manufacturer_name>
+      <R_attribute>ABCD1234</R_attribute>
+    </HeaderOperation>
+
+    <HeaderOperation id="ID_312">
+      <id>302</id>
+      <Name>BoltScrewing</Name>
+      <Manufacturer_name>PQR_Manuf_BoltScrewing</Manufacturer_name>
+      <R_attribute>ABCD1234</R_attribute>
+    </HeaderOperation>
+    
+    <HeaderOperation id="ID_313">
+      <id>303</id>
+      <Name>RRiveting</Name>
+      <Manufacturer_name>PQR_Manuf_RRiveting</Manufacturer_name>
+      <R_attribute>ABCD1234</R_attribute>
+    </HeaderOperation>
+
+    <OperationInst id="ID_301">
+      <ID>ID_301</ID>
+      <Name>NutWelding</Name>
+      <Owned>ID_300</Owned>
+      <Instancing>ID_311</Instancing>
+      <TransformationInstanceRef>
+        <InputItem>ID_101</InputItem>
+        <OutputItem>ID_102</OutputItem>
+      </TransformationInstanceRef>
+    </OperationInst>
+
+    <OperationInst id="ID_302">
+      <ID>ID_302</ID>
+      <Name>BoltScrewing</Name>
+      <Owned>ID_300</Owned>
+      <Instancing>ID_312</Instancing>
+      <TransformationInstanceRef>
+        <InputItem>ID_102</InputItem>
+        <OutputItem>ID_103</OutputItem>
+      </TransformationInstanceRef>
+    </OperationInst>
+
+    <OperationInst id="ID_303">
+      <ID>ID_303</ID>
+      <Name>RRiveting</Name>
+      <Owned>ID_300</Owned>
+      <Instancing>ID_313</Instancing>
+      <TransformationInstanceRef>
+        <InputItem>ID_103</InputItem>
+        <OutputItem>ID_104</OutputItem>
+      </TransformationInstanceRef>
+    </OperationInst>
+  </ProcessPlanningStructure>
+
+</XPDMXML>

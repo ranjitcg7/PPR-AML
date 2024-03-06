@@ -1,0 +1,1579 @@
+﻿<ns0:CAEXFile xmlns:ns0="http://www.dke.de/CAEX" ChangeMode="state" SchemaVersion="3.0" FileName="Beispiel_Gelenk_V4_EA.aml" p1:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <ns0:SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.6.10.0" LastWritingDateTime="2023-10-07T09:39:04.1619021+02:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.6.10.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
+  <ns0:InterfaceClassLib ChangeMode="state" ID="a5ec83fa-6e72-4c0b-9536-1aeeed2ef007" Name="BlueInterfaceClassLib">
+    <ns0:InterfaceClass ChangeMode="state" Name="PP_connection" />
+    <ns0:InterfaceClass ChangeMode="state" Name="PR_connection" />
+    <ns0:InterfaceClass ChangeMode="state" Name="RR_connection" />
+  </ns0:InterfaceClassLib>
+  <ns0:InterfaceClassLib ChangeMode="state" ID="a38ccdda-bd1b-4898-863b-f7a38f38e1de" Name="RedInterfaceClassLib">
+    <ns0:InterfaceClass ChangeMode="state" Name="PP_connection" />
+    <ns0:InterfaceClass ChangeMode="state" Name="PR_connection" />
+    <ns0:InterfaceClass ChangeMode="state" Name="RR_connection" />
+  </ns0:InterfaceClassLib>
+  <ns0:InterfaceClassLib ChangeMode="state" ID="d1b90150-c1cc-44af-a004-ff0fdffb72d7" Name="GreenInterfaceClassLib">
+    <ns0:InterfaceClass ChangeMode="state" Name="PP_connection" />
+    <ns0:InterfaceClass ChangeMode="state" Name="PR_connection" />
+    <ns0:InterfaceClass ChangeMode="state" Name="RR_connection" />
+  </ns0:InterfaceClassLib>
+  <ns0:InterfaceClassLib ChangeMode="state" Name="AutomationMLInterfaceClassLib">
+    <ns0:Description ChangeMode="state">Standard Automation Markup Language Interface Class Library</ns0:Description>
+    <ns0:Version ChangeMode="state">2.10.0</ns0:Version>
+    <ns0:InterfaceClass ChangeMode="state" Name="AutomationMLBaseInterface">
+      <ns0:InterfaceClass ChangeMode="state" Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Direction" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction" xsi:type="ns0:AttributeType" />
+      </ns0:InterfaceClass>
+      <ns0:InterfaceClass ChangeMode="state" Name="Port" RefBaseClassPath="AutomationMLBaseInterface">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Direction" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction" xsi:type="ns0:AttributeType">
+          <ns0:Constraint ChangeMode="state" Name="AllowedValues">
+            <ns0:NominalScaledType>
+              <ns0:RequiredValue>In</ns0:RequiredValue>
+              <ns0:RequiredValue>Out</ns0:RequiredValue>
+              <ns0:RequiredValue>InOut</ns0:RequiredValue>
+            </ns0:NominalScaledType>
+          </ns0:Constraint>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Cardinality" RefAttributeType="AutomationMLBaseAttributeTypeLib/Cardinality" xsi:type="ns0:AttributeType">
+          <ns0:Attribute ChangeMode="state" Name="MinOccur" AttributeDataType="xs:unsignedInt" xsi:type="ns0:AttributeType" />
+          <ns0:Attribute ChangeMode="state" Name="MaxOccur" AttributeDataType="xs:unsignedInt" xsi:type="ns0:AttributeType" />
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Category" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Category" xsi:type="ns0:AttributeType" />
+      </ns0:InterfaceClass>
+      <ns0:InterfaceClass ChangeMode="state" Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+      <ns0:InterfaceClass ChangeMode="state" Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="refURI" AttributeDataType="xs:anyURI" RefAttributeType="AutomationMLBaseAttributeTypeLib/refURI" xsi:type="ns0:AttributeType" />
+        <ns0:InterfaceClass ChangeMode="state" Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector" />
+        <ns0:InterfaceClass ChangeMode="state" Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector" />
+        <ns0:InterfaceClass ChangeMode="state" Name="ExternalDataReference" RefBaseClassPath="ExternalDataConnector">
+          <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MIMEType" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/MIMEType" xsi:type="ns0:AttributeType" />
+        </ns0:InterfaceClass>
+      </ns0:InterfaceClass>
+      <ns0:InterfaceClass ChangeMode="state" Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+        <ns0:InterfaceClass ChangeMode="state" Name="SignalInterface" RefBaseClassPath="Communication" />
+      </ns0:InterfaceClass>
+    </ns0:InterfaceClass>
+  </ns0:InterfaceClassLib>
+  <ns0:RoleClassLib ChangeMode="state" ID="389e6e44-d2ab-49f3-9712-80ff0acab9d0" Name="BlueRoleClassLib">
+    <ns0:RoleClass ChangeMode="state" ID="7739193f-d40d-4a8e-bcc2-71f3f40ea075" Name="ProductRoleClass">
+      <ns0:RoleClass ChangeMode="state" ID="ab2ae8fd-cac0-486a-8fbb-66a89bc0fb2e" Name="InputMaterial">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>101</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABC_Manuf_Plate</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="a38be557-1dcc-4bab-a707-8cccf51adc70" Name="IntermediateMaterial">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>102</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABC_Manuf_WeldedPlate</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>103</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABC_Manuf_PlateWithBolt</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="90e9f939-d048-47e1-a833-aa85fbd0c79e" Name="FinalProduct">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>104</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>Diamond_Manuf_FinalProduct</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+    </ns0:RoleClass>
+    <ns0:RoleClass ChangeMode="state" ID="c86d09ea-98b2-493f-a89c-61135782901d" Name="ResourceRoleClass">
+      <ns0:RoleClass ChangeMode="state" ID="e55350c3-8a8b-4e7d-81c5-6a003fe21d1d" Name="WeldingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>201</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_WeldingUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="ad18566c-7be5-46dc-bbec-4b24d576694c" Name="Station">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>202</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_Cell</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="fb1e23a2-0720-4561-aaa0-3aa588bbc250" Name="ScrewingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>203</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_ScrewingUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="fa81d055-a9b9-4611-aa94-486ab4d0c5e3" Name="FixingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>204</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_FixingUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="cfef5240-8cf0-4bbe-ba1f-087d1a43e507" Name="QCPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>205</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_QualityControlUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="95bd52cc-3e53-4790-9a69-962919403c1a" Name="RivetingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>206</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_RivetingUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+    </ns0:RoleClass>
+    <ns0:RoleClass ChangeMode="state" ID="6bc7c42b-6069-4f58-94cc-ee7edd594b41" Name="ProcessRoleClass">
+      <ns0:RoleClass ChangeMode="state" ID="41c14aa9-37e4-4f18-904f-c59c2434fd3b" Name="WeldingProcess">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>301</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>PQR_Manuf_NutWelding</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="24573c0a-afea-4a8f-a850-ba5d8b7f08bf" Name="ScrewingProcess">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>302</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>PQR_Manuf_BoltScrewing</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="9e6b3a6b-0f12-497c-b0af-d1b69dde9ecc" Name="RivetingProcess">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>303</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>PQR_Manuf_RRiveting</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+    </ns0:RoleClass>
+  </ns0:RoleClassLib>
+  <ns0:RoleClassLib ChangeMode="state" ID="35264bb8-f5e1-4d06-96b4-9551ca8ce9f0" Name="RedRoleClassLib">
+    <ns0:RoleClass ChangeMode="state" ID="996edc34-39cb-43d0-95a4-184ded4584b8" Name="ResourceRoleClass">
+      <ns0:RoleClass ChangeMode="state" ID="7f149c6e-da25-418a-8fda-189de2953037" Name="WeldingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>201</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_TEMP" xsi:type="ns0:AttributeType">
+          <ns0:Value>200</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="5b81e255-a619-4be6-bfad-bd3158c5dfcd" Name="Station">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>202</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="19fcd9e5-a6d1-458a-b1ee-40529898ab0b" Name="ScrewingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>203</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_TORQUE" xsi:type="ns0:AttributeType">
+          <ns0:Value>10</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="b591f835-dbfe-443d-9c63-5610976960d4" Name="FixingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>204</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MECHANICAL_CLEARANCE" xsi:type="ns0:AttributeType">
+          <ns0:Value>5</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="5d66b8a6-89e0-4795-9859-e991d88b939e" Name="QCPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>205</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="TOLERANCE" xsi:type="ns0:AttributeType">
+          <ns0:Value>5</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="d60969b2-6587-4bf8-86c2-97b9e6eaa747" Name="RivetingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>206</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_PRESSURE" xsi:type="ns0:AttributeType">
+          <ns0:Value>15</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+    </ns0:RoleClass>
+  </ns0:RoleClassLib>
+  <ns0:RoleClassLib ChangeMode="state" ID="f3276796-3c50-4b0c-8507-6eea6bc4d288" Name="GreenRoleClassLib">
+    <ns0:RoleClass ChangeMode="state" ID="fa617000-3a41-483d-be07-949d487bca56" Name="ProductRoleClass">
+      <ns0:RoleClass ChangeMode="state" ID="dc00ad8a-d34d-4c84-b1dd-063555eb57f5" Name="InputMaterial">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>101</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>2.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+          <ns0:Value>8.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+          <ns0:Value>1.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="05db89a6-cc64-4d0f-9dec-fad351611992" Name="IntermediateMaterial">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>102</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>2.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+          <ns0:Value>12.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+          <ns0:Value>1.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>103</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>3.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+          <ns0:Value>15.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+          <ns0:Value>1.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="7b55c7e3-f915-41fc-84bb-c0a223e23ca7" Name="FinalProduct">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>104</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>5.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+          <ns0:Value>20.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+          <ns0:Value>1.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+    </ns0:RoleClass>
+    <ns0:RoleClass ChangeMode="state" ID="27010afd-88a7-44cd-a4fe-cf66d87da8aa" Name="ProcessRoleClass">
+      <ns0:RoleClass ChangeMode="state" ID="c04cdc44-3462-4fab-baed-f3db19ab5af5" Name="WeldingProcess">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>301</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>15.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>15.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>2.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>140.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="3acd0567-508f-4b0c-8478-a100edd35961" Name="ScrewingProcess">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>302</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>12.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>15.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>5.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="ratedTorque" xsi:type="ns0:AttributeType">
+          <ns0:Value>5.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>100.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="2e05c003-30b2-4532-bfc5-f9cac477e147" Name="RivetingProcess">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>303</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>16.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>8.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>4.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Pressure" xsi:type="ns0:AttributeType">
+          <ns0:Value>8.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>60.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+    </ns0:RoleClass>
+    <ns0:RoleClass ChangeMode="state" ID="77ec112a-bdc7-4566-b278-cf053202b4e6" Name="ResourceRoleClass">
+      <ns0:RoleClass ChangeMode="state" ID="13e100a6-167b-405e-9bdd-648292a90468" Name="WeldingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>201</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>10.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>10.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Temperature" xsi:type="ns0:AttributeType">
+          <ns0:Value>200.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>150.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="bc4a5669-cece-4db6-872f-29752778f17a" Name="Station">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>202</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>160.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="f7843b18-6909-4dea-b1f1-b0b10a1f4926" Name="ScrewingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>203</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>12.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="ratedTorque" xsi:type="ns0:AttributeType">
+          <ns0:Value>5.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>80.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="9dc95b5a-a824-4d05-957e-30dfb9b43d90" Name="FixingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>204</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>10.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>60.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="037aef7b-3e44-47d2-95dd-e6849432e064" Name="QCPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>205</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>10.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>4.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>20.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" ID="262b9977-2ca3-42dd-9bf1-3f7da8bb6bce" Name="RivetingPlatte">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>206</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>15.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Pressure" xsi:type="ns0:AttributeType">
+          <ns0:Value>8.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>80.0</ns0:Value>
+        </ns0:Attribute>
+      </ns0:RoleClass>
+    </ns0:RoleClass>
+  </ns0:RoleClassLib>
+  <ns0:RoleClassLib ChangeMode="state" Name="AutomationMLBaseRoleClassLib">
+    <ns0:Description ChangeMode="state">Automation Markup Language base role class library</ns0:Description>
+    <ns0:Version ChangeMode="state">2.10.0</ns0:Version>
+    <ns0:RoleClass ChangeMode="state" Name="AutomationMLBaseRole">
+      <ns0:RoleClass ChangeMode="state" Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="AssociatedFacet" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/AssociatedFacet" xsi:type="ns0:AttributeType" />
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" Name="Facet" RefBaseClassPath="AutomationMLBaseRole" />
+      <ns0:RoleClass ChangeMode="state" Name="Resource" RefBaseClassPath="AutomationMLBaseRole" />
+      <ns0:RoleClass ChangeMode="state" Name="Product" RefBaseClassPath="AutomationMLBaseRole" />
+      <ns0:RoleClass ChangeMode="state" Name="Process" RefBaseClassPath="AutomationMLBaseRole" />
+      <ns0:RoleClass ChangeMode="state" Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+        <ns0:RoleClass ChangeMode="state" Name="ProductStructure" RefBaseClassPath="Structure" />
+        <ns0:RoleClass ChangeMode="state" Name="ProcessStructure" RefBaseClassPath="Structure" />
+        <ns0:RoleClass ChangeMode="state" Name="ResourceStructure" RefBaseClassPath="Structure" />
+      </ns0:RoleClass>
+      <ns0:RoleClass ChangeMode="state" Name="ExternalData" RefBaseClassPath="AutomationMLBaseRole" />
+    </ns0:RoleClass>
+  </ns0:RoleClassLib>
+  <ns0:SystemUnitClassLib ChangeMode="state" ID="b968a61f-7bc6-4054-bd39-fed8576e0a35" Name="BlueView">
+    <ns0:SystemUnitClass ChangeMode="state" ID="8f15f3ef-e952-4337-afaa-470b9cb79428" Name="InputMaterial">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>101</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABC_Manuf_Plate</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProductRoleClass/InputMaterial" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="4e817042-b58b-42d9-8ed1-6e899d2f321c" Name="IntermediateMaterial">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>102</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABC_Manuf_WeldedPlate</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProductRoleClass/IntermediateMaterial" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="0bb962a0-5142-4979-af52-2a5129ee0ebd" Name="FinalProduct">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>104</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>Diamond_Manuf_FinalProduct</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProductRoleClass/FinalProduct" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="e30f456f-d295-4d6f-8830-664664f2a829" Name="WeldingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>201</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_WeldingUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/WeldingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="94dcca7b-1c3a-4929-80f4-671cd226511d" Name="Station">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>202</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_Cell</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/Station" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="8a9efa13-c376-4a66-9c81-78296ca8f4d6" Name="ScrewingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>203</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_ScrewingUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/ScrewingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="6ba9af4d-b663-4a33-bf8d-b2bb6bce56bd" Name="FixingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>204</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_FixingUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/FixingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="679e6211-9078-4944-b072-3ac9af4e98c0" Name="QCPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>205</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_QualityControlUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/QCPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="17bb7974-5fcb-40cc-accd-2b6803d6198a" Name="RivetingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>206</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_RivetingUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/RivetingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="211111a4-30a9-4e2b-a35c-1da6ecd265c3" Name="WeldingProcess">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>301</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>PQR_Manuf_NutWelding</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProcessRoleClass/WeldingProcess" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="dccc76e8-4f33-44b2-9ba1-afec308d6a27" Name="ScrewingProcess">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>302</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>PQR_Manuf_BoltScrewing</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProcessRoleClass/ScrewingProcess" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="e75dc6d1-903b-4106-8ad6-a568b5fa973c" Name="RivetingProcess">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>303</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>PQR_Manuf_RRiveting</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProcessRoleClass/RivetingProcess" />
+    </ns0:SystemUnitClass>
+  </ns0:SystemUnitClassLib>
+  <ns0:SystemUnitClassLib ChangeMode="state" ID="11a59b43-a31e-4805-ab91-0e8581ba638c" Name="RedView">
+    <ns0:SystemUnitClass ChangeMode="state" ID="f555f2cc-c48f-4808-98ae-aa338b335178" Name="WeldingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>201</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_TEMP" xsi:type="ns0:AttributeType">
+        <ns0:Value>200</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/WeldingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="d7867c6d-5338-4650-b636-3459a509d5e4" Name="Station">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>202</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/Station" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="bef2c9a4-a826-4c67-bd4a-0d81aef84a17" Name="ScrewingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>203</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_TORQUE" xsi:type="ns0:AttributeType">
+        <ns0:Value>10</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/ScrewingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="7c9b86d8-78db-41bf-bc98-022b33bc269f" Name="FixingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>204</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MECHANICAL_CLEARANCE" xsi:type="ns0:AttributeType">
+        <ns0:Value>5</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/FixingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="e4b408a7-814c-4826-bd9d-7140aa600266" Name="QCPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>205</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="TOLERANCE" xsi:type="ns0:AttributeType">
+        <ns0:Value>5</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/QCPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="0f6cb76a-1faa-4c9b-9ae0-83e3b8ea537a" Name="RivetingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>206</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_PRESSURE" xsi:type="ns0:AttributeType">
+        <ns0:Value>15</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/RivetingPlatte" />
+    </ns0:SystemUnitClass>
+  </ns0:SystemUnitClassLib>
+  <ns0:SystemUnitClassLib ChangeMode="state" ID="84b56220-f582-4e04-b890-1cff285f5f84" Name="GreenView">
+    <ns0:SystemUnitClass ChangeMode="state" ID="058247af-40f1-40f0-a204-d6e5139a5e28" Name="InputMaterial">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>101</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>2.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+        <ns0:Value>8.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+        <ns0:Value>1.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProductRoleClass/InputMaterial" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="f7edcf0f-e877-4bf0-be93-dc6c3f2f06f7" Name="WeldingProcess">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>301</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>2.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>140.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProcessRoleClass/WeldingProcess" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="733dad99-6264-4437-b2b2-3a9c7ee179b4" Name="WeldingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>201</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>10.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>10.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Temperature" xsi:type="ns0:AttributeType">
+        <ns0:Value>200.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>150.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/WeldingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="445bd69b-e3d9-4972-9666-170e070605be" Name="IntermediateMaterial">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>102</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>2.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+        <ns0:Value>12.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+        <ns0:Value>1.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProductRoleClass/IntermediateMaterial" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="24161bfb-b18b-4472-908c-c416ef1fa8ac" Name="ScrewingProcess">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>302</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>12.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>5.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="ratedTorque" xsi:type="ns0:AttributeType">
+        <ns0:Value>5.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>100.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProcessRoleClass/ScrewingProcess" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="d13ffd0e-5d7e-4566-b87c-e74ec1f6f56b" Name="Station">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>202</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>160.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/Station" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="f74b0ae6-1eae-413f-80cd-ce8ce351c24a" Name="ScrewingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>203</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>12.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="ratedTorque" xsi:type="ns0:AttributeType">
+        <ns0:Value>5.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>80.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/ScrewingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="b5b795c7-38de-4450-92c9-b282f0c52683" Name="FixingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>204</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>10.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>60.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/FixingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="bed1073e-db77-45a3-9f76-5c4fffeb4bd9" Name="QCPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>205</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>10.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>4.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>20.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/QCPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="3f9b5644-17e8-41ed-9332-c5543b347ee0" Name="IntermediateMaterial">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>103</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>3.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+        <ns0:Value>1.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProductRoleClass/IntermediateMaterial" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="53eae175-9402-4ce1-a33c-c2012e3ef141" Name="RivetingProcess">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>303</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>16.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>8.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>4.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Pressure" xsi:type="ns0:AttributeType">
+        <ns0:Value>8.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>60.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProcessRoleClass/RivetingProcess" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="ccd493af-00e1-4b24-b163-d4050b41aada" Name="RivetingPlatte">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>206</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Pressure" xsi:type="ns0:AttributeType">
+        <ns0:Value>8.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>80.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/RivetingPlatte" />
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass ChangeMode="state" ID="7bb590b0-eb30-485e-a631-a18fa1cb4d6d" Name="FinalProduct">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>104</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>5.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+        <ns0:Value>20.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+        <ns0:Value>1.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProductRoleClass/FinalProduct" />
+    </ns0:SystemUnitClass>
+  </ns0:SystemUnitClassLib>
+  <ns0:SystemUnitClassLib Name="Diamond">
+    <ns0:Version>0</ns0:Version>
+    <ns0:SystemUnitClass Name="InputMaterial" ID="a82075d1-aef5-430c-9fca-a5843cd1112d">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABC_Manuf_Plate</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>101</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>2.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+        <ns0:Value>8.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+        <ns0:Value>1.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ProductRoleClass/InputMaterial" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ProductRoleClass/InputMaterial" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="a973b68d-8225-4ff7-bf2d-bdf1ce28fe97" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>101</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABC_Manuf_Plate</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProductRoleClass/InputMaterial" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="2773a5ef-d584-4685-a40c-96247173a959" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>101</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>2.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+          <ns0:Value>8.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+          <ns0:Value>1.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProductRoleClass/InputMaterial" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="IntermediateMaterial" ID="9c12d2f1-4ed6-4768-97b2-a59576a5150b">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABC_Manuf_PlateWithBolt</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>103</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>3.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+        <ns0:Value>1.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ProductRoleClass/IntermediateMaterial" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ProductRoleClass/IntermediateMaterial" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="793b4e9d-4c77-4c50-baee-c7a5c6962f4f" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>102</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABC_Manuf_WeldedPlate</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProductRoleClass/IntermediateMaterial" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="3ce21e45-d863-4854-9703-addca35c3bbd" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>102</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>2.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+          <ns0:Value>12.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+          <ns0:Value>1.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProductRoleClass/IntermediateMaterial" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="FinalProduct" ID="e3054d09-76c7-493a-b7cd-05556d8a1e6b">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>Diamond_Manuf_FinalProduct</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>104</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>5.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+        <ns0:Value>20.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+        <ns0:Value>1.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ProductRoleClass/FinalProduct" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ProductRoleClass/FinalProduct" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="c0f507a7-7770-42ef-9ef2-09f92b5299fc" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>104</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>Diamond_Manuf_FinalProduct</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProductRoleClass/FinalProduct" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="0a01631b-d424-4d1f-a932-835722882c1d" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>104</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>5.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyFootprint" xsi:type="ns0:AttributeType">
+          <ns0:Value>20.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Quantity" xsi:type="ns0:AttributeType">
+          <ns0:Value>1.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProductRoleClass/FinalProduct" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="WeldingPlatte" ID="72be8449-ea36-4b94-acda-500e695f32ab">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_WeldingUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_TEMP" xsi:type="ns0:AttributeType">
+        <ns0:Value>200</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>201</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>10.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>10.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Temperature" xsi:type="ns0:AttributeType">
+        <ns0:Value>200.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>150.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ResourceRoleClass/WeldingPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="RedRoleClassLib/ResourceRoleClass/WeldingPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ResourceRoleClass/WeldingPlatte" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="fa9b4ce8-62d5-46a9-9bcc-6f5878cec740" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>201</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_WeldingUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/WeldingPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="f717f974-4818-4e2f-845a-785abe6bf676" Name="RedView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>201</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_TEMP" xsi:type="ns0:AttributeType">
+          <ns0:Value>200</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/WeldingPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="8a0de16e-dd76-4fd9-84f0-c2e43a4b74ce" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>201</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>10.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>10.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Temperature" xsi:type="ns0:AttributeType">
+          <ns0:Value>200.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>150.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/WeldingPlatte" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="Station" ID="c187e92b-1a4a-41df-ab0d-0a489c080511">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_Cell</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>202</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>160.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ResourceRoleClass/Station" />
+      <ns0:SupportedRoleClass RefRoleClassPath="RedRoleClassLib/ResourceRoleClass/Station" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ResourceRoleClass/Station" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="2af8309b-6515-4b2f-b676-59c8a42a510d" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>202</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_Cell</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/Station" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="1914e67a-7ed8-405e-9940-95872bfcd42b" Name="RedView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>202</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/Station" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="1951a5f6-d799-4faf-bd3f-5b579b3ff426" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>202</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>160.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/Station" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="ScrewingPlatte" ID="dbfd74f6-bae2-4f78-b0e8-13209fc24aac">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_ScrewingUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_TORQUE" xsi:type="ns0:AttributeType">
+        <ns0:Value>10</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>203</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>12.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="ratedTorque" xsi:type="ns0:AttributeType">
+        <ns0:Value>5.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>80.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ResourceRoleClass/ScrewingPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="RedRoleClassLib/ResourceRoleClass/ScrewingPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ResourceRoleClass/ScrewingPlatte" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="bc8fdc79-1ea0-485b-9873-0f5f31bb9403" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>203</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_ScrewingUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/ScrewingPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="b929b277-3739-4c6f-ab3e-7dbfc3b53434" Name="RedView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>203</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_TORQUE" xsi:type="ns0:AttributeType">
+          <ns0:Value>10</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/ScrewingPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="5c244240-1210-4aa0-a8c9-71e95c0ff2a1" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>203</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>12.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="ratedTorque" xsi:type="ns0:AttributeType">
+          <ns0:Value>5.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>80.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/ScrewingPlatte" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="FixingPlatte" ID="34ea3a46-a2ea-4755-886c-5cb76bb86e5b">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_FixingUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MECHANICAL_CLEARANCE" xsi:type="ns0:AttributeType">
+        <ns0:Value>5</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>204</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>10.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>60.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ResourceRoleClass/FixingPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="RedRoleClassLib/ResourceRoleClass/FixingPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ResourceRoleClass/FixingPlatte" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="36dff309-19c2-46e2-9f58-0aef6e55d1bd" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>204</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_FixingUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/FixingPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="a5286281-49b7-4e0f-889d-78384d2e5f46" Name="RedView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>204</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MECHANICAL_CLEARANCE" xsi:type="ns0:AttributeType">
+          <ns0:Value>5</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/FixingPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="4950c22c-e0b3-47fd-88aa-0d6e7adbd9da" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>204</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>10.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>60.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/FixingPlatte" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="QCPlatte" ID="973e6055-b282-4bd5-9d51-4b4053093013">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_QualityControlUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="TOLERANCE" xsi:type="ns0:AttributeType">
+        <ns0:Value>5</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>205</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>10.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>4.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>20.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ResourceRoleClass/QCPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="RedRoleClassLib/ResourceRoleClass/QCPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ResourceRoleClass/QCPlatte" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="c297728a-a34a-4ec5-9465-c59938f2ffaf" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>205</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_QualityControlUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/QCPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="e9c6a17b-06b9-45b9-b1db-dccda1ef0371" Name="RedView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>205</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="TOLERANCE" xsi:type="ns0:AttributeType">
+          <ns0:Value>5</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/QCPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="0472deb6-d7ab-47c7-8f5b-e907731ebf0d" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>205</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>10.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>4.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>20.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/QCPlatte" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="RivetingPlatte" ID="a83716bc-e592-48d1-861e-e32a7e50d183">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>XYZ_Manuf_RivetingUnit</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_PRESSURE" xsi:type="ns0:AttributeType">
+        <ns0:Value>15</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>206</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Pressure" xsi:type="ns0:AttributeType">
+        <ns0:Value>8.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>80.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ResourceRoleClass/RivetingPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="RedRoleClassLib/ResourceRoleClass/RivetingPlatte" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ResourceRoleClass/RivetingPlatte" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="6bbd401c-5d8b-4916-a583-2e0ea91398c4" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>206</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>XYZ_Manuf_RivetingUnit</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ResourceRoleClass/RivetingPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="e0f05126-cc18-4a52-ab22-e43595cb4370" Name="RedView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>206</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MAX_PRESSURE" xsi:type="ns0:AttributeType">
+          <ns0:Value>15</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="RedView/ResourceRoleClass/RivetingPlatte" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="1dd06d56-fe97-414e-afc7-7a05c5301549" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>206</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>15.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Pressure" xsi:type="ns0:AttributeType">
+          <ns0:Value>8.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>80.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ResourceRoleClass/RivetingPlatte" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="WeldingProcess" ID="8a7c800c-0a37-4692-afae-66bd6f802756">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>PQR_Manuf_NutWelding</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>301</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>2.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>140.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ProcessRoleClass/WeldingProcess" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ProcessRoleClass/WeldingProcess" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="377419be-520d-4ad9-9f11-44cb7f014862" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>301</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>PQR_Manuf_NutWelding</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProcessRoleClass/WeldingProcess" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="cac554cb-1562-4bd2-80b2-178a24d6cce6" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>301</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>15.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>15.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>2.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>140.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProcessRoleClass/WeldingProcess" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="ScrewingProcess" ID="13515a63-f996-4a4b-8752-051fa5053732">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>PQR_Manuf_BoltScrewing</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>302</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>12.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>15.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>5.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="ratedTorque" xsi:type="ns0:AttributeType">
+        <ns0:Value>5.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>100.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ProcessRoleClass/ScrewingProcess" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ProcessRoleClass/ScrewingProcess" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="59027b34-687b-47df-a2d4-b8c637b6e76a" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>302</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>PQR_Manuf_BoltScrewing</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProcessRoleClass/ScrewingProcess" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="64068f93-2d93-4813-925c-7d511bc41ebf" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>302</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>12.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>15.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>5.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="ratedTorque" xsi:type="ns0:AttributeType">
+          <ns0:Value>5.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>100.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProcessRoleClass/ScrewingProcess" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+    <ns0:SystemUnitClass Name="RivetingProcess" ID="eb0351b6-7dec-409b-a7ec-081379e18384">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+        <ns0:Value>PQR_Manuf_RRiveting</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+        <ns0:Value>ABCD1234</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+        <ns0:Value>303</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+        <ns0:Value>16.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+        <ns0:Value>8.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+        <ns0:Value>4.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Pressure" xsi:type="ns0:AttributeType">
+        <ns0:Value>8.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+        <ns0:Value>60.0</ns0:Value>
+      </ns0:Attribute>
+      <ns0:SupportedRoleClass RefRoleClassPath="BlueRoleClassLib/ProcessRoleClass/RivetingProcess" />
+      <ns0:SupportedRoleClass RefRoleClassPath="GreenRoleClassLib/ProcessRoleClass/RivetingProcess" />
+      <ns0:SystemUnitClass ChangeMode="state" ID="7a5cee0f-f088-422c-a10e-11b36d209b12" Name="BlueView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>303</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Manufacturer_name" xsi:type="ns0:AttributeType">
+          <ns0:Value>PQR_Manuf_RRiveting</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="R_attribute" xsi:type="ns0:AttributeType">
+          <ns0:Value>ABCD1234</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="BlueView/ProcessRoleClass/RivetingProcess" />
+      </ns0:SystemUnitClass>
+      <ns0:SystemUnitClass ChangeMode="state" ID="e037755d-90c2-4058-b2bf-7eae34b9fe95" Name="GreenView">
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="id" xsi:type="ns0:AttributeType">
+          <ns0:Value>303</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Current" xsi:type="ns0:AttributeType">
+          <ns0:Value>16.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Duration" xsi:type="ns0:AttributeType">
+          <ns0:Value>8.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Deviation" xsi:type="ns0:AttributeType">
+          <ns0:Value>4.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Pressure" xsi:type="ns0:AttributeType">
+          <ns0:Value>8.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="EnergyConsumption" xsi:type="ns0:AttributeType">
+          <ns0:Value>60.0</ns0:Value>
+        </ns0:Attribute>
+        <ns0:SupportedRoleClass ChangeMode="state" RefRoleClassPath="GreenView/ProcessRoleClass/RivetingProcess" />
+      </ns0:SystemUnitClass>
+    </ns0:SystemUnitClass>
+  </ns0:SystemUnitClassLib>
+  <ns0:AttributeTypeLib ChangeMode="state" Name="AutomationMLBaseAttributeTypeLib">
+    <ns0:Description ChangeMode="state">Standard Automation Markup Language Attribute Type Library</ns0:Description>
+    <ns0:Version ChangeMode="state">2.10.0</ns0:Version>
+    <ns0:AttributeType ChangeMode="state" Name="Direction" AttributeDataType="xs:string">
+      <ns0:Constraint ChangeMode="state" Name="AllowedValues">
+        <ns0:NominalScaledType>
+          <ns0:RequiredValue>In</ns0:RequiredValue>
+          <ns0:RequiredValue>Out</ns0:RequiredValue>
+          <ns0:RequiredValue>InOut</ns0:RequiredValue>
+        </ns0:NominalScaledType>
+      </ns0:Constraint>
+    </ns0:AttributeType>
+    <ns0:AttributeType ChangeMode="state" Name="Cardinality">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MinOccur" AttributeDataType="xs:unsignedInt" xsi:type="ns0:AttributeType" />
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="MaxOccur" AttributeDataType="xs:unsignedInt" xsi:type="ns0:AttributeType" />
+    </ns0:AttributeType>
+    <ns0:AttributeType ChangeMode="state" Name="Category" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="refURI" AttributeDataType="xs:anyURI" />
+    <ns0:AttributeType ChangeMode="state" Name="AssociatedFacet" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="ListType" />
+    <ns0:AttributeType ChangeMode="state" Name="OrderedListType" />
+    <ns0:AttributeType ChangeMode="state" Name="LocalizedAttribute" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="AssociatedExternalValue">
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="refCAEXAttribute" xsi:type="ns0:AttributeType" />
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="refURI" RefAttributeType="AutomationMLBaseAttributeTypeLib/refURI" xsi:type="ns0:AttributeType" />
+      <ns0:Attribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ChangeMode="state" Name="Direction" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction" xsi:type="ns0:AttributeType" />
+    </ns0:AttributeType>
+    <ns0:AttributeType ChangeMode="state" Name="MIMEType" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="DocLang" AttributeDataType="xs:string" />
+  </ns0:AttributeTypeLib>
+  <ns0:AttributeTypeLib ChangeMode="state" Name="BlueAttributeTypeLib">
+    <ns0:Version ChangeMode="state">0</ns0:Version>
+    <ns0:AttributeType ChangeMode="state" Name="Name" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="ID" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="ManufacturerName" AttributeDataType="xs:string" />
+  </ns0:AttributeTypeLib>
+  <ns0:AttributeTypeLib ChangeMode="state" Name="GreenAttributeTypeLib">
+    <ns0:Version ChangeMode="state">0</ns0:Version>
+    <ns0:AttributeType ChangeMode="state" Name="RunName" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="ID" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="Current" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="Duration" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="Temperature" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="Deviation" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="Torque" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="Pressure" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="EnergyFootPrint" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="EnergyConsumption" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="ClampingForce" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="Quantity" AttributeDataType="xs:string" />
+  </ns0:AttributeTypeLib>
+  <ns0:AttributeTypeLib ChangeMode="state" Name="RedAttributeTypeLib">
+    <ns0:Version ChangeMode="state">0</ns0:Version>
+    <ns0:AttributeType ChangeMode="state" Name="EnggName" AttributeDataType="xs:string">
+      <ns0:Value>engg</ns0:Value>
+    </ns0:AttributeType>
+    <ns0:AttributeType ChangeMode="state" Name="ID" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="MaxTemperature" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="MaxTorque" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="MechanicalClearance" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="Tolerance" AttributeDataType="xs:string" />
+    <ns0:AttributeType ChangeMode="state" Name="MaxPressure" AttributeDataType="xs:string" />
+  </ns0:AttributeTypeLib>
+</ns0:CAEXFile>
