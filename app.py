@@ -419,7 +419,7 @@ with col_IH:
 
     tree_IH = [TreeItem('Products:', '100', children = product_children),
             TreeItem('Process:', '200', children = process_children),
-            TreeItem('Resuorce:', '300', children = resource_children)  ]
+            TreeItem('Resource:', '300', children = resource_children)  ]
 
     instance = antd_tree(
         items=tree_IH,
